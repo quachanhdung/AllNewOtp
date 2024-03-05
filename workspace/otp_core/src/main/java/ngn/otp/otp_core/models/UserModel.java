@@ -1,5 +1,7 @@
 package ngn.otp.otp_core.models;
 
+import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -8,7 +10,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "user")
-public class User {
+public class UserModel {
     @Id
     @Column(name = "userid", nullable = false)
     private String userId;
@@ -35,10 +37,10 @@ public class User {
     private String manualCode;
 
     @Column(name = "datecreated")
-    private Long dateCreated;
+    private Date dateCreated;
 
     @Column(name = "datemodified")
-    private Long dateModified;
+    private Date dateModified;
 
     @Column(name = "isadmin")
     private Boolean isAdmin=false;
@@ -79,6 +81,40 @@ public class User {
     
     @Column(name = "activecode",unique=true)
     private String activeCode;
+
+	public UserModel(String userId, String phone1, String phone2, String organization, String code, String privateKey,
+			Boolean enable, String manualCode, Date dateCreated, Date dateModified, Boolean isAdmin, byte[] password,
+			Boolean enableSms, Boolean enableAppCode, String email, String jobTitle, String cccd, String fullName,
+			Boolean enableOtpApp, Boolean required, Long lastLoginDate, Integer logonDuration, String activeCode) {
+		super();
+		this.userId = userId;
+		this.phone1 = phone1;
+		this.phone2 = phone2;
+		this.organization = organization;
+		this.code = code;
+		this.privateKey = privateKey;
+		this.enable = enable;
+		this.manualCode = manualCode;
+		this.dateCreated = dateCreated;
+		this.dateModified = dateModified;
+		this.isAdmin = isAdmin;
+		this.password = password;
+		this.enableSms = enableSms;
+		this.enableAppCode = enableAppCode;
+		this.email = email;
+		this.jobTitle = jobTitle;
+		this.cccd = cccd;
+		this.fullName = fullName;
+		this.enableOtpApp = enableOtpApp;
+		this.required = required;
+		this.lastLoginDate = lastLoginDate;
+		this.logonDuration = logonDuration;
+		this.activeCode = activeCode;
+	}
+    
+    public UserModel() {
+    	
+    }
 
 	public String getUserId() {
 		return userId;
@@ -144,19 +180,19 @@ public class User {
 		this.manualCode = manualCode;
 	}
 
-	public Long getDateCreated() {
+	public Date getDateCreated() {
 		return dateCreated;
 	}
 
-	public void setDateCreated(Long dateCreated) {
+	public void setDateCreated(Date dateCreated) {
 		this.dateCreated = dateCreated;
 	}
 
-	public Long getDateModified() {
+	public Date getDateModified() {
 		return dateModified;
 	}
 
-	public void setDateModified(Long dateModified) {
+	public void setDateModified(Date dateModified) {
 		this.dateModified = dateModified;
 	}
 
@@ -264,8 +300,7 @@ public class User {
 		this.activeCode = activeCode;
 	}
     
-
-    // Constructors, getters, and setters
+    
     
     
 }

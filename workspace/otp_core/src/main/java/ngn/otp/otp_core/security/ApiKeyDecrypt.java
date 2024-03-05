@@ -24,7 +24,9 @@ public class ApiKeyDecrypt {
         return new String(decryptedBytes);
     }
 	public static void main(String[] args) {
-        String base64EncodedString = "FpSuRdBife759qqquLtONpdAOiEjX5jVlMleInKkWx4ZQTsL9zssBJfOhatMZSHUGXnXHvPfkxwOuLcFOQdTvo4aLfYlf3q1DLBqBT7ldvJuwxX3hkEZb/5QN34AgNnMpCstgMJ4baIcP7JrcwpYx5iSKtV0js+nwHnUdPJSiEBmUJDqefeX96sMtQ4m/Y1d";
+        String base64EncodedString = "kgw5KynWd9MAGht7waCZsFI0eTumLPxLVUEnRVtEXjypXNkpQ3vHEtPvWK5llC4M"
+        		+ "Df4bvl0BsbedKaGFsnOPJOd8kpaTcW7R04FDsZZMOAwlyKwguh0LVEsi3qQnDJM3"
+        		+ "BkVeBjH4F2WYga6D3TGqKljEJSl7QyluPpq0+Rp0S+HYx07sp4Wjynvaxb4oRB14";
         String key = "01234567890123456789012345678901";
         String iv = "0123456789012345";
 
