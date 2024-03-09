@@ -2,6 +2,8 @@ package ngn.otp.otp_core.models;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -28,6 +30,7 @@ public class UserModel {
     private String code;
 
     @Column(name = "privatekey")
+    @JsonIgnore
     private String privateKey;
 
     @Column(name = "enable")
@@ -47,6 +50,7 @@ public class UserModel {
 
     @Lob
     @Column(name = "password")
+    @JsonIgnore
     private byte[] password;
 
     @Column(name = "enablesms")

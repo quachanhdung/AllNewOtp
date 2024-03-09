@@ -19,6 +19,11 @@ public class UserService {
 	}
 	public void save(UserModel userModel) {
 		userRepo.save(userModel);
+		
+	}
+	public void delete(UserModel model) {
+		userRepo.delete(model);
+		
 	}
 
 }

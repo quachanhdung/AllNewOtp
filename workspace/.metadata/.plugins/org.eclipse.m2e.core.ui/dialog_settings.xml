@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core"/>
 			<item value="/Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_auth"/>
 		</list>
 		<list key="projectNameTemplate">
