@@ -39,4 +39,9 @@ public class ApplicationService {
 		
 	}
 
+	public void delete(ApplicationModel model) {
+		applicationRep.delete(model);
+		
+	}
+
 }

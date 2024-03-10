@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import ngn.otp.otp_core.ApplicationContextProvider;
 import ngn.otp.otp_core.models.UserModel;
+import ngn.otp.otp_core.services.UserApplicationService;
 import ngn.otp.otp_core.services.UserService;
 import ngn.otp.otp_core.utils.CommonUtil;
 import ngn.otp.otp_core.utils.PropUtil;
@@ -25,11 +27,13 @@ import ngn.otp.otp_core.utils.TOTPUtil;
 public class UserController {
 	Logger logger = LoggerFactory.getLogger(UserController.class);
 	private UserService userService;
+	private UserApplicationService userApplicationService;
 	PropUtil prop;
 	private int privateKeyLength = 32;
 
-	public UserController(UserService userService) {
+	public UserController(UserService userService, UserApplicationService userApplicationService) {
 		this.userService=userService;
+		this.userApplicationService = userApplicationService;
 		this.prop = ApplicationContextProvider.getContext().getBean(PropUtil.class);
 
 		try {
@@ -98,17 +102,10 @@ public class UserController {
 		}
 	}
 
-	@PutMapping("/updateInfo")
-	Map<String,Object> updateInfo(@RequestBody Map<String, Object> requestBody) {
+	@PutMapping("/updateInfo/{userId}")
+	Map<String,Object> updateInfo(@PathVariable String userId, @RequestBody Map<String, Object> requestBody) {
 		logger.info("/user/updateInfo");
-		String userId, email=null, phone=null, fullName=null, organization=null;
-		String jobTitle=null, cccd=null;
-		try {
-			userId = requestBody.get("userId").toString();
-		}catch(Exception e) {
-			return CommonUtil.createResult(999, e.toString(), null);
-		}
-	
+		String  email=null, phone=null, fullName=null, organization=null,jobTitle=null, cccd=null;
 		//email
 		try {
 			email=requestBody.get("email").toString().trim();
@@ -147,12 +144,25 @@ public class UserController {
 			if(userModel!=null) {
 				//user info
 				userModel.setUserId(userId);
-				userModel.setEmail(email);
-				userModel.setPhone1(phone);
-				userModel.setFullName(fullName);
-				userModel.setOrganization(organization);
-				userModel.setJobTitle(jobTitle);
-				userModel.setCccd(cccd);
+				if(email!=null) {
+					userModel.setEmail(email);
+				}
+				if(phone!=null) {
+					userModel.setPhone1(phone);
+				}
+				if(fullName!=null) {
+					userModel.setFullName(fullName);
+				}
+				if(organization!=null) {
+					userModel.setOrganization(organization);
+				}
+				if(jobTitle!=null) {
+					userModel.setJobTitle(jobTitle);
+				}
+				if(cccd!=null) {
+					userModel.setCccd(cccd);
+				}
+				
 				userModel.setDateModified(new Date());
 				
 				userService.save(userModel);
@@ -173,10 +183,11 @@ public class UserController {
 		try {
 			userId = requestBody.get("userId").toString().trim();
 			UserModel userModel = userService.findById(userId);
+			userApplicationService.deleteByUser(userModel);
 			userService.delete(userModel);
 			return CommonUtil.createResult(200, "Ok", null);
 		}catch(Exception e) {
-			return CommonUtil.createResult(400, "userId is required", null);
+			return CommonUtil.createResult(400, e.toString(), null);
 		}
 	}
 	
@@ -334,6 +345,9 @@ public class UserController {
 			UserModel userModel = userService.findById(userId);
 			if(userModel!=null) {
 				userModel.setEnableSms(enable);
+				if(enable) {
+					userModel.setEnable(true);
+				}
 				userModel.setDateModified(new Date());
 				userService.save(userModel);
 				return CommonUtil.createResult(200, "Ok", null);
