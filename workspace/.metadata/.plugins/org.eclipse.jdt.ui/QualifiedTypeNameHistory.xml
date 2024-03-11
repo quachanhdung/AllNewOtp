@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jakarta.persistence.Temporal"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Lob"/>
     <fullyQualifiedTypeName name="javax.crypto.Cipher"/>
     <fullyQualifiedTypeName name="javax.crypto.spec.SecretKeySpec"/>
     <fullyQualifiedTypeName name="javax.crypto.spec.IvParameterSpec"/>
@@ -26,8 +24,6 @@
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.models.DownloadPrivateKeyModel"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.models.LdapServerModel"/>
-    <fullyQualifiedTypeName name="ngn.otp.otp_core.models.UserApplicationId"/>
-    <fullyQualifiedTypeName name="ngn.otp.otp_core.models.UserApplicationModel"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.models.UserDeviceModel"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.models.UserDeviceId"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.models.ZimbraLdapKeyModel"/>
@@ -39,25 +35,29 @@
     <fullyQualifiedTypeName name="ngn.otp.otp_core.repositories.ApplicationRepo"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.repositories.DownloadPrivateKeyRepo"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.repositories.LdapServerRepo"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
-    <fullyQualifiedTypeName name="ngn.otp.otp_core.services.UserService"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.utils.CommonUtil"/>
     <fullyQualifiedTypeName name="org.apache.commons.codec.binary.Base32"/>
     <fullyQualifiedTypeName name="com.eatthepath.otp.TimeBasedOneTimePasswordGenerator"/>
-    <fullyQualifiedTypeName name="ngn.otp.otp_core.models.UserModel"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="jakarta.mail.internet.MimeMessage"/>
     <fullyQualifiedTypeName name="jakarta.mail.MessagingException"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.utils.EmailUtil"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
-    <fullyQualifiedTypeName name="ngn.otp.otp_core.services.ApplicationService"/>
-    <fullyQualifiedTypeName name="ngn.otp.otp_core.models.ApplicationModel"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.utils.TOTPUtil"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+    <fullyQualifiedTypeName name="ngn.otp.otp_core.services.UserApplicationService"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="ngn.otp.otp_core.models.UserApplicationId"/>
+    <fullyQualifiedTypeName name="ngn.otp.otp_core.models.UserApplicationModel"/>
+    <fullyQualifiedTypeName name="ngn.otp.otp_core.models.UserModel"/>
+    <fullyQualifiedTypeName name="ngn.otp.otp_core.services.UserService"/>
+    <fullyQualifiedTypeName name="ngn.otp.otp_core.services.ApplicationService"/>
+    <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
+    <fullyQualifiedTypeName name="ngn.otp.otp_core.models.ApplicationModel"/>
 </qualifiedTypeNameHistroy>
