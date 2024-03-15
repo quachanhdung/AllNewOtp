@@ -40,13 +40,15 @@ public class LdapServerController {
 		logger.info("/ldapserver/add");
 		int serverType;
 		boolean defaultServer;
-		String serverUrl, domainName, searchBase, searchFilter, serverDescription,principal,credential;
+		String serverUrl, domainName, searchBase, searchFilter,binddn,
+		serverDescription,principal,credential;
 		LdapServerModel model = new LdapServerModel();
 		try {
 			serverUrl = requestBody.get("serverUrl").toString().trim();
 			domainName = requestBody.get("domainName").toString().trim();
 			searchBase = requestBody.get("searchBase").toString().trim();
 			searchFilter = requestBody.get("searchFilter").toString().trim();
+			binddn = requestBody.get("binddn").toString().trim();
 			serverDescription = requestBody.get("serverDescription").toString().trim();
 			principal = requestBody.get("principal").toString().trim();
 			credential = requestBody.get("credential").toString().trim();
@@ -57,6 +59,7 @@ public class LdapServerController {
 			model.setDomainName(domainName);
 			model.setSearchBase(searchBase);
 			model.setSearchFilter(searchFilter);
+			model.setBinddn(binddn);
 			model.setServerDescription(serverDescription);
 			model.setPrincipal(principal);
 			model.setCredential(credential);
@@ -67,7 +70,7 @@ public class LdapServerController {
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Missing field or invalid data type: "
 					+ "{serverUrl:String, domainName:String, "
-					+ "searchBase:String, searchFilter:String, "
+					+ "searchBase:String, searchFilter:String, binddn:String "
 					+ "serverDescription:String, principal:String, "
 					+ "credential:String, serverType:int, "
 					+ "defaultServer:boolean", null);
@@ -85,7 +88,7 @@ public class LdapServerController {
 		logger.info("/ldapserver/update/"+serverId);
 		Integer serverType=null;
 		Boolean defaultServer=null;
-		String serverUrl=null, domainName=null, searchBase=null, searchFilter=null, 
+		String serverUrl=null, domainName=null, searchBase=null, searchFilter=null, binddn=null,
 				serverDescription=null,principal=null,credential=null;
 		LdapServerModel model = ldapServerService.findById(serverId);
 		if(model==null) {
@@ -109,6 +112,10 @@ public class LdapServerController {
 		
 		try {
 			searchFilter = requestBody.get("searchFilter").toString().trim();
+		}catch(Exception e) {}
+		
+		try {
+			binddn = requestBody.get("binddn").toString().trim();
 		}catch(Exception e) {}
 		
 		try {
@@ -146,6 +153,9 @@ public class LdapServerController {
 		}
 		if(searchFilter!=null) {
 			model.setSearchFilter(searchFilter);
+		}
+		if(binddn!=null) {
+			model.setBinddn(binddn);
 		}
 		if(serverDescription!=null) {
 			model.setServerDescription(serverDescription);

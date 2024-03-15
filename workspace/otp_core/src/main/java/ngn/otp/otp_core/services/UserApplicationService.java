@@ -42,5 +42,9 @@ public class UserApplicationService {
 	public List<UserApplicationModel> findByApplicationModel(ApplicationModel applicationModel){
 		return userApplicationRepo.findByApplicationModel(applicationModel);
 	}
+	public UserApplicationModel findByUserAndApplicationModel(UserModel userModel, ApplicationModel applicationModel) {
+		return userApplicationRepo.findByUserAndApplicationModel(userModel,applicationModel).orElse(null);
+	}
+	
 
 }

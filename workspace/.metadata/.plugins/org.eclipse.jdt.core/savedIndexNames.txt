@@ -19,7 +19,6 @@ INDEX VERSION 1.134+/Users/quachanhdung/ngn_working/AllNewOtp/workspace/.metadat
 1025838520.index
 2716757712.index
 1051783378.index
-1359286395.index
 2973437096.index
 3637256422.index
 884829731.index

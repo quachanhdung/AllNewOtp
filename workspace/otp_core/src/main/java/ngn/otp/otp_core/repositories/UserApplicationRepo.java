@@ -1,6 +1,7 @@
 package ngn.otp.otp_core.repositories;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
@@ -22,5 +23,7 @@ public interface UserApplicationRepo extends JpaRepository<UserApplicationModel,
 	List<UserApplicationModel> findByUser(UserModel userModel);
 
 	List<UserApplicationModel> findByApplicationModel(ApplicationModel applicationModel);
+
+	Optional<UserApplicationModel> findByUserAndApplicationModel(UserModel userModel, ApplicationModel applicationModel);
 
 }

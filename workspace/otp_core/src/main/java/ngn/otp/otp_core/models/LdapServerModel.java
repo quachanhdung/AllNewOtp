@@ -22,10 +22,14 @@ public class LdapServerModel {
 
     @Column(name = "searchfilter", length = 255)
     private String searchFilter;
+    
+    @Column(name="binddn", length=255)
+    private String binddn;
 
     @Column(name = "serverdescription", length = 255)
     private String serverDescription;
 
+    //0: active directory; 1: ldap
     @Column(name = "servertype")
     private Integer serverType;
 
@@ -46,13 +50,14 @@ public class LdapServerModel {
     
 
 	public LdapServerModel(Long serverId, String serverUrl, String domainName, String searchBase, String searchFilter,
-			String serverDescription, Integer serverType, Boolean defaultServer, String principal, String credential) {
+			String binddn, String serverDescription, Integer serverType, Boolean defaultServer, String principal, String credential) {
 		super();
 		this.serverId = serverId;
 		this.serverUrl = serverUrl;
 		this.domainName = domainName;
 		this.searchBase = searchBase;
 		this.searchFilter = searchFilter;
+		this.binddn = binddn;
 		this.serverDescription = serverDescription;
 		this.serverType = serverType;
 		this.defaultServer = defaultServer;
@@ -140,6 +145,17 @@ public class LdapServerModel {
 	public void setCredential(String credential) {
 		this.credential = credential;
 	}
+
+
+	public String getBinddn() {
+		return binddn;
+	}
+
+
+	public void setBinddn(String binddn) {
+		this.binddn = binddn;
+	}
+	
 
     
 }
