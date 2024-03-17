@@ -25,5 +25,16 @@ public class UserService {
 		userRepo.delete(model);
 		
 	}
+	public UserModel findByActiveCode(String activeCode) {
+		return userRepo.findByActiveCode(activeCode).orElse(null);
+	}
+	public UserModel findByPhone(String phone) {
+		
+		return userRepo.findByPhone1(phone).orElse(null);
+	}
+	public UserModel findByEmail(String email) {
+		
+		return userRepo.findByEmail(email).orElse(null);
+	}
 
 }

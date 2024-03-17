@@ -38,13 +38,14 @@ public class DownloadPrivateKeyModel {
 
 	}
 
-	public DownloadPrivateKeyModel(String userId, String deviceId, String deviceName,
-			 UserModel userModel) {
+	public DownloadPrivateKeyModel(UserModel userModel, String deviceId, String deviceName
+			 ) {
 		super();
-		this.userId = userId;
+		this.userId = userModel.getUserId();
 		this.deviceId = deviceId;
 		this.deviceName = deviceName;
 		this.userModel = userModel;
+		this.createdDate = new Date();
 	}
 
 	public String getUserId() {

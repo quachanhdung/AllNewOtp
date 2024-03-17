@@ -6,4 +6,6 @@ import ngn.otp.otp_core.models.DownloadPrivateKeyModel;
 
 public interface DownloadPrivateKeyRepo extends JpaRepository<DownloadPrivateKeyModel, String>{
 
+	void deleteByUserId(String userId);
+
 }

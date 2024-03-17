@@ -20,6 +20,7 @@ import ngn.otp.otp_core.models.ApplicationModel;
 import ngn.otp.otp_core.models.UserApplicationModel;
 import ngn.otp.otp_core.models.UserModel;
 import ngn.otp.otp_core.services.ApplicationService;
+import ngn.otp.otp_core.services.DownloadPrivateKeyService;
 import ngn.otp.otp_core.services.LdapServerService;
 import ngn.otp.otp_core.services.UserApplicationService;
 import ngn.otp.otp_core.services.UserService;
@@ -35,6 +36,7 @@ public class UserController {
 	private ApplicationService applicationService;
 	private UserApplicationService userApplicationService;
 	private LdapServerService ldapServerService;
+	private DownloadPrivateKeyService downloadPrivateKeyService;
 	PropUtil prop;
 	private int privateKeyLength = 32;
 
@@ -42,11 +44,13 @@ public class UserController {
 			UserService userService, 
 			ApplicationService applicationService,
 			LdapServerService ldapServerService,
+			DownloadPrivateKeyService downloadPrivateKeyService,
 			UserApplicationService userApplicationService) {
 		this.userService=userService;
 		this.applicationService = applicationService;
 		this.ldapServerService = ldapServerService;
 		this.userApplicationService = userApplicationService;
+		this.downloadPrivateKeyService = downloadPrivateKeyService;
 		this.prop = ApplicationContextProvider.getContext().getBean(PropUtil.class);
 
 		try {
@@ -303,27 +307,28 @@ public class UserController {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
-	@PutMapping("/enableOtpApp")
-	Map<String, Object> enableOtpApp(@RequestBody Map<String, Object> requestBody){
-		logger.info("/user/enableOtpApp");
+	@PutMapping("/disableOtpApp")
+	Map<String, Object> disableOtpApp(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/disableOtpApp");
 		String userId;
-		boolean enable=false;
+		
 		try {
 			userId=requestBody.get("userId").toString().trim();
-			enable = (boolean) requestBody.get("enable");
 			UserModel userModel = userService.findById(userId);
 			if(userModel!=null) {
-				userModel.setEnableOtpApp(enable);
+				userModel.setEnableOtpApp(false);
 				userModel.setDateModified(new Date());
 				userService.save(userModel);
+				downloadPrivateKeyService.deleteByUserId(userId);
 				return CommonUtil.createResult(200, "Ok", null);
 			}else {
 				return CommonUtil.createResult(401, "User not found", null);
 			}
 		}catch(Exception e) {
-			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
 		}
 	}
+	
 	@PutMapping("/enableRequired")
 	Map<String, Object> enableRequired(@RequestBody Map<String, Object> requestBody){
 		logger.info("/user/enableRequired");
@@ -466,14 +471,16 @@ public class UserController {
 			
 			UserModel userModel = userService.findById(userId);
 			if(userModel==null) {
-				Map<String, Object> result=new HashMap<>();
-				result.put("auth", false);
-				return CommonUtil.createResult(200, "User not exist ", result);
+				return CommonUtil.createResult(401, "User not exist ", null);
 			}
 			boolean authen = TOTPUtil.checkOTP(userModel.getPrivateKey(), otpCode);
-			Map<String, Object> result=new HashMap<>();
-			result.put("auth", authen);
-			return CommonUtil.createResult(200, "Ok", result);
+			logger.info("authOtpCode "+userId+" "+authen);
+			if(authen) {
+				return CommonUtil.createResult(200, "Ok", null);
+			}else {
+				return CommonUtil.createResult(401, "OtpCode not match", null);
+			}
+			
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, otpCode: String} is required", null);
 		}
@@ -488,10 +495,12 @@ public class UserController {
 			userId=requestBody.get("userId").toString().trim();
 			password=requestBody.get("password").toString().trim();
 			boolean authen = ldapServerService.authen(userId, password);
-			Map<String, Object> result=new HashMap<>();
-			result.put("auth", authen);
-			return CommonUtil.createResult(200, "Ok", result);
-			
+			logger.info("authLdap "+userId+" "+authen);
+			if(authen) {
+				return CommonUtil.createResult(200, "Ok", null);
+			}else {
+				return CommonUtil.createResult(401, "userId or password not match", null);
+			}
 			
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, password: String} is required", null);
