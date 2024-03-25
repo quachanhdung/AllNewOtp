@@ -17,7 +17,7 @@ public class UserModel {
     @Column(name = "userid", nullable = false)
     private String userId;
 
-    @Column(name = "phone1",unique=true)
+    @Column(name = "phone1",unique=true, nullable = false)
     private String phone1;
 
     @Column(name = "phone2")
@@ -29,7 +29,7 @@ public class UserModel {
     @Column(name = "code")
     private String code;
 
-    @Column(name = "privatekey")
+    @Column(name = "privatekey",nullable = false)
     @JsonIgnore
     private String privateKey;
 
@@ -59,7 +59,7 @@ public class UserModel {
     @Column(name = "enableappcode")
     private Boolean enableAppCode=false;
 
-    @Column(name = "email",unique=true)
+    @Column(name = "email",unique=true,nullable = false)
     private String email;
 
     @Column(name = "jobtitle")
@@ -85,6 +85,12 @@ public class UserModel {
     
     @Column(name = "activecode",unique=true)
     private String activeCode;
+    
+    @Column(name="pincode")
+    private String pinCode;
+    
+    @Column(name="searchfield")
+    private String searchField;
 
 	public UserModel(String userId, String phone1, String phone2, String organization, String code, String privateKey,
 			Boolean enable, String manualCode, Date dateCreated, Date dateModified, Boolean isAdmin, byte[] password,
@@ -303,6 +309,24 @@ public class UserModel {
 	public void setActiveCode(String activeCode) {
 		this.activeCode = activeCode;
 	}
+
+	public String getSearchField() {
+		return searchField;
+	}
+
+	public void setSearchField(String searchField) {
+		this.searchField = searchField;
+	}
+
+	public String getPinCode() {
+		return pinCode;
+	}
+
+	public void setPinCode(String pinCode) {
+		this.pinCode = pinCode;
+	}
+	
+	
     
     
     

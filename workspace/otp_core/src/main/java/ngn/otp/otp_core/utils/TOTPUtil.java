@@ -273,13 +273,15 @@ public class TOTPUtil {
 
 	public static String generatePrivateKey(int length) {
 		Random RANDOM = new SecureRandom();
-		String ALPHABET = "234567ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String ALPHABET = "0123456789ABCDEF";
 		StringBuilder returnValue = new StringBuilder(length);
 		for (int i = 0; i < length; i++) {
 			returnValue.append(ALPHABET.charAt(RANDOM.nextInt(ALPHABET.length())));
 		}
 		return new String(returnValue);
 	}
+	
+	
 	
 	public static String generateRandomNumberString() {
 	    Random rnd = new Random();

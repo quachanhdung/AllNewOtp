@@ -1,0 +1,100 @@
+<mxfile host="Electron" modified="2024-03-19T02:08:00.762Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="baN_PZEnxa1U1gpLQddY" version="24.0.4" type="device">
+  <diagram name="Page-1" id="2a8f0On35AF3IOb2VB6y">
+    <mxGraphModel dx="1434" dy="907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="J_YxeElzWUtDt8AjJ6lE-40" value="&lt;h1&gt;Download private key from mobile app&lt;/h1&gt;&lt;p&gt;Ngoài userId, phone hoặc email thì cần truyền thêm deviceId, deviceId này dùng để mã hóa privateKey&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="470" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="J_YxeElzWUtDt8AjJ6lE-41" target="xa-Vq-NIsYVGTVrgi5_M-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="J_YxeElzWUtDt8AjJ6lE-41" value="Bắt đầu" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="192.5" y="200" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-1" target="xa-Vq-NIsYVGTVrgi5_M-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-1" value="Nhập mã khách hàng" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="136.88" y="340" width="211.25" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-10" value="Đúng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-5" target="xa-Vq-NIsYVGTVrgi5_M-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-26" value="Sai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-5" target="xa-Vq-NIsYVGTVrgi5_M-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-5" value="Mã khách hàng tồn tại ?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="158.76" y="440" width="167.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-9" target="xa-Vq-NIsYVGTVrgi5_M-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-9" value="Nhập userName hoặc phone hoặc email" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="108.74999999999999" y="570" width="267.49" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-28" value="Sai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-11" target="xa-Vq-NIsYVGTVrgi5_M-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-32" value="Đúng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-11" target="xa-Vq-NIsYVGTVrgi5_M-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-11" value="Tồn tại user ?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="143.74" y="670" width="197.51" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-13" target="xa-Vq-NIsYVGTVrgi5_M-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-13" value="Gửi active code qua email và sms đến user" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="153.12" y="930" width="177.51" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-17" target="xa-Vq-NIsYVGTVrgi5_M-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-17" value="User nhập active code" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="149.39" y="1050" width="186.26" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-22" value="Đúng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-19" target="xa-Vq-NIsYVGTVrgi5_M-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-30" value="Sai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-19" target="xa-Vq-NIsYVGTVrgi5_M-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-19" value="Active code đúng ?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="153.75" y="1170" width="177.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-21" target="xa-Vq-NIsYVGTVrgi5_M-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-21" value="Gửi private key xuống thiết bị" style="whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="173.78" y="1320" width="137.49" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-23" value="Kết thúc" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="202.52499999999998" y="1420" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-25" value="Thông báo mã khách hàng không tồn tại" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="440" y="450" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-27" value="Thông báo không tồn tại user" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="399.98" y="681.87" width="220.02" height="46.25" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-29" value="Thông báo active code không đúng" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="399.99" y="1189.38" width="220.01" height="51.25" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-33" value="Sai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-31" target="xa-Vq-NIsYVGTVrgi5_M-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-35" value="Đúng" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xa-Vq-NIsYVGTVrgi5_M-31" target="xa-Vq-NIsYVGTVrgi5_M-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-31" value="User đã kích hoạt&lt;br&gt;trên thiết bị khác ?" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="143.12" y="800" width="197.51" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xa-Vq-NIsYVGTVrgi5_M-34" value="Thông báo user đã kích hoạt&lt;br&gt;trên thiết bị khác" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="409.99" y="811.25" width="200.01" height="47.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

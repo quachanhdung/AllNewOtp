@@ -21,7 +21,9 @@ import ngn.otp.otp_core.models.UserApplicationModel;
 import ngn.otp.otp_core.models.UserModel;
 import ngn.otp.otp_core.services.ApplicationService;
 import ngn.otp.otp_core.services.DownloadPrivateKeyService;
+import ngn.otp.otp_core.services.EmailService;
 import ngn.otp.otp_core.services.LdapServerService;
+import ngn.otp.otp_core.services.SmsService;
 import ngn.otp.otp_core.services.UserApplicationService;
 import ngn.otp.otp_core.services.UserService;
 import ngn.otp.otp_core.utils.CommonUtil;
@@ -37,6 +39,8 @@ public class UserController {
 	private UserApplicationService userApplicationService;
 	private LdapServerService ldapServerService;
 	private DownloadPrivateKeyService downloadPrivateKeyService;
+	private SmsService smsService ;
+	private EmailService emailService;
 	PropUtil prop;
 	private int privateKeyLength = 32;
 
@@ -45,12 +49,16 @@ public class UserController {
 			ApplicationService applicationService,
 			LdapServerService ldapServerService,
 			DownloadPrivateKeyService downloadPrivateKeyService,
+			SmsService smsService,
+			EmailService emailService,
 			UserApplicationService userApplicationService) {
 		this.userService=userService;
 		this.applicationService = applicationService;
 		this.ldapServerService = ldapServerService;
 		this.userApplicationService = userApplicationService;
 		this.downloadPrivateKeyService = downloadPrivateKeyService;
+		this.smsService = smsService;
+		this.emailService = emailService;
 		this.prop = ApplicationContextProvider.getContext().getBean(PropUtil.class);
 
 		try {
@@ -60,38 +68,70 @@ public class UserController {
 		}
 	}
 
-	@GetMapping("/sayHello")
-	Map<String, Object> sayHello(){
-		logger.info("/user/sayHello");
-		return CommonUtil.createResult(200, "Success", "hello, this is user controller");
+	@GetMapping("/getAll")
+	Map<String, Object> getAll(){
+		logger.info("/user/getAll");
+		return CommonUtil.createResult(0, "Success", userService.getAll());
 	}
+
+	@PostMapping("/search")
+	Map<String, Object> search(@RequestBody Map<String, Object> requestBody){
+		int offset=0, limit =100;
+		String keyword = "";
+		try {
+			offset= (int) requestBody.get("offset");
+			
+		}catch(Exception e) {
+			
+		}
+		
+		try {
+			limit = (int) requestBody.get("limit");
+		} catch (Exception e) {
+			
+			
+		}
+		try {
+			keyword = requestBody.get("keyword").toString();
+		} catch (Exception e) {
+		
+			
+		}
+		
+		Map<String,Object> result = new HashMap<>();
+		result = CommonUtil.createResult(0, "Success", userService.search(keyword, offset, limit));
+		long count = userService.searchCount(keyword);
+		result.put("count", count);
+		
+		
+		return result;
+	}
+
+
 
 	@PostMapping("/add")
 	Map<String,Object> add(@RequestBody Map<String, Object> requestBody) {
 		logger.info("/user/add");
-		String userId, email=null, phone=null, fullName=null;
+		String userId=null, email=null, phone=null, fullName="";
 		try {
-			userId = requestBody.get("userId").toString();
-		}catch(Exception e) {
-			return CommonUtil.createResult(400, "userId is required", null);
-		}
-		if(userId.trim().isEmpty()) {
-			return CommonUtil.createResult(400, "userId is required", null);
-		}
-		//email
-		try {
+			userId = requestBody.get("userId").toString().trim();
+			phone=requestBody.get("phone").toString().trim();
 			email=requestBody.get("email").toString().trim();
 			if(CommonUtil.isValidEmailAddress(email)==false) {
-				email=null;
+				email="";
 			}
-		}catch(Exception e) {};
-		//phone
-		try {
-			phone=requestBody.get("phone").toString().trim();
 			if(CommonUtil.isValidPhoneNumber(phone)==false) {
-				phone=null;
+				phone="";
 			}
-		}catch(Exception e) {}
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "userId, phone, email are required", null);
+		}
+
+		if(userId.isEmpty() || phone.isEmpty() || email.isEmpty()) {
+			return CommonUtil.createResult(400, "userId, phone, email are required", null);
+		}
+
+
 		//fullName
 		try {
 			fullName=requestBody.get("fullName").toString().trim();
@@ -103,6 +143,7 @@ public class UserController {
 				userModel=new UserModel();
 				userModel.setUserId(userId);
 				userModel.setEmail(email);
+				userModel.setPhone1(phone);
 				userModel.setFullName(fullName);
 				userModel.setPrivateKey(TOTPUtil.generatePrivateKey(this.privateKeyLength));
 				userModel.setActiveCode(TOTPUtil.generateRandomNumberString());
@@ -141,12 +182,12 @@ public class UserController {
 		try {
 			fullName=requestBody.get("fullName").toString().trim();
 		}catch(Exception e) {}
-		
+
 		//organization
 		try {
 			organization=requestBody.get("organization").toString().trim();
 		}catch(Exception e) {}
-		
+
 		//jobTitle
 		try {
 			jobTitle=requestBody.get("jobTitle").toString().trim();
@@ -155,7 +196,7 @@ public class UserController {
 		try {
 			cccd=requestBody.get("cccd").toString().trim();
 		}catch(Exception e) {}
-	
+
 		try {
 			UserModel userModel=userService.findById(userId);
 			if(userModel!=null) {
@@ -179,9 +220,9 @@ public class UserController {
 				if(cccd!=null) {
 					userModel.setCccd(cccd);
 				}
-				
+
 				userModel.setDateModified(new Date());
-				
+
 				userService.save(userModel);
 				return CommonUtil.createResult(200, "OK", userModel);
 			}else {
@@ -196,18 +237,19 @@ public class UserController {
 	Map<String,Object> delete(@RequestBody Map<String, Object> requestBody) {
 		logger.info("/user/delete");
 		String userId;
-		
+
 		try {
 			userId = requestBody.get("userId").toString().trim();
 			UserModel userModel = userService.findById(userId);
 			userApplicationService.deleteByUser(userModel);
+			downloadPrivateKeyService.deleteByUserId(userId);
 			userService.delete(userModel);
 			return CommonUtil.createResult(200, "Ok", null);
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, e.toString(), null);
 		}
 	}
-	
+
 	@PostMapping("/get")
 	Map<String, Object> get(@RequestBody Map<String, Object> requestBody){
 		logger.info("user/get");
@@ -220,13 +262,13 @@ public class UserController {
 			}else {
 				return CommonUtil.createResult(401, "User not found", userModel);
 			}
-			
+
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
 		}
-		
+
 	}
-	
+
 	@PostMapping("/getPrivateKey")
 	Map<String, Object> getPrivateKey(@RequestBody Map<String, Object> requestBody){
 		logger.info("user/getPrivateKey");
@@ -239,11 +281,11 @@ public class UserController {
 			}else {
 				return CommonUtil.createResult(401, "User not found", userModel);
 			}
-			
+
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
 		}
-		
+
 	}
 	@PostMapping("/getActiveCode")
 	Map<String, Object> getActiveCode(@RequestBody Map<String, Object> requestBody){
@@ -257,11 +299,11 @@ public class UserController {
 			}else {
 				return CommonUtil.createResult(401, "User not found", userModel);
 			}
-			
+
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
 		}
-		
+
 	}
 
 	@PutMapping("/enableOtp")
@@ -285,7 +327,7 @@ public class UserController {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
-	
+
 	@PutMapping("/enableAppCode")
 	Map<String, Object> enableAppCode(@RequestBody Map<String, Object> requestBody){
 		logger.info("/user/enableAppCode");
@@ -307,13 +349,79 @@ public class UserController {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
+	@PutMapping("/setPinCode")
+	Map<String, Object> enablePinCode(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/setPinCode");
+		String userId;
+		String pinCode;
+		int pinCodeLength = 6;
+		try {
+			pinCodeLength = Integer.parseInt(prop.get("pincode.length"));
+		} catch (Exception e) {
+		}
+		
+		try {
+			userId=requestBody.get("userId").toString().trim();
+			pinCode =  requestBody.get("pinCode").toString().trim();
+			
+			try {
+				Integer.parseInt(pinCode);
+			} catch (Exception e) {
+				return CommonUtil.createResult(401, "pinCode must be a string containing "+pinCodeLength+" digit", null);
+			}
+			
+			
+			
+			
+			if(pinCode.length()!=pinCodeLength){
+				return CommonUtil.createResult(401, "pinCode must be a string containing "+pinCodeLength+" digit", null);
+			}
+			
+			UserModel userModel = userService.findById(userId);
+			if(userModel!=null) {
+				userModel.setPinCode(pinCode);
+				userModel.setDateModified(new Date());
+				userService.save(userModel);
+				return CommonUtil.createResult(200, "Ok", null);
+			}else {
+				return CommonUtil.createResult(401, "User not found", null);
+			}
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String, pinCode: String} is required", null);
+		}
+	}
+	
+	@PutMapping("/clearPinCode")
+	Map<String, Object> clearPinCode(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/clearPinCode");
+		String userId;
+		try {
+			userId=requestBody.get("userId").toString().trim();
+			UserModel userModel = userService.findById(userId);
+			if(userModel!=null) {
+				userModel.setPinCode(null);
+				userModel.setDateModified(new Date());
+				userService.save(userModel);
+				return CommonUtil.createResult(200, "Ok", null);
+			}else {
+				return CommonUtil.createResult(401, "User not found", null);
+			}
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+	}
 	@PutMapping("/disableOtpApp")
 	Map<String, Object> disableOtpApp(@RequestBody Map<String, Object> requestBody){
 		logger.info("/user/disableOtpApp");
 		String userId;
-		
-		try {
+
+		try{
 			userId=requestBody.get("userId").toString().trim();
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		try {
 			UserModel userModel = userService.findById(userId);
 			if(userModel!=null) {
 				userModel.setEnableOtpApp(false);
@@ -325,10 +433,10 @@ public class UserController {
 				return CommonUtil.createResult(401, "User not found", null);
 			}
 		}catch(Exception e) {
-			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+			return CommonUtil.createResult(400, e.toString(),null);
 		}
 	}
-	
+
 	@PutMapping("/enableRequired")
 	Map<String, Object> enableRequired(@RequestBody Map<String, Object> requestBody){
 		logger.info("/user/enableRequired");
@@ -350,7 +458,7 @@ public class UserController {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
-	
+
 
 	@PutMapping("/enableSms")
 	Map<String, Object> enableSms(@RequestBody Map<String, Object> requestBody){
@@ -376,7 +484,7 @@ public class UserController {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
-	
+
 	@PutMapping("/enableAdmin")
 	Map<String, Object> enableAdmin(@RequestBody Map<String, Object> requestBody){
 		logger.info("/user/enableAdmin");
@@ -398,7 +506,7 @@ public class UserController {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
-	
+
 	/**
 	 * Check if user enabled otp or otp for application
 	 * @param requestBody {userId,applicationId}. if applicationId is null 
@@ -413,12 +521,12 @@ public class UserController {
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
-		
+
 		try {
 			applicationId=requestBody.get("applicationId").toString().trim();
 		}catch(Exception e) {
 		}
-		
+
 		try {
 			UserModel userModel = userService.findById(userId);
 			if(userModel==null) {
@@ -426,20 +534,20 @@ public class UserController {
 				result.put("enableOtp", false);
 				return CommonUtil.createResult(200, "User not exist", result);
 			}
-			
+
 			if(applicationId==null) {
 				Map<String, Object> result=new HashMap<>();
 				result.put("enableOtp", userModel.getEnable());
 				return CommonUtil.createResult(200, "Ok", result);
 			}
-			
+
 			ApplicationModel applicationModel = applicationService.findById(applicationId);
 			if(applicationModel==null) {
 				Map<String, Object> result=new HashMap<>();
 				result.put("enableOtp", false);
 				return CommonUtil.createResult(200, "Application not exist", result);
 			}
-			
+
 			UserApplicationModel userApplicationModel = userApplicationService.findByUserAndApplicationModel(userModel,applicationModel);
 			if(userApplicationModel==null) {
 				Map<String, Object> result=new HashMap<>();
@@ -449,12 +557,12 @@ public class UserController {
 			Map<String, Object> result=new HashMap<>();
 			result.put("enableOtp", userModel.getEnable());
 			return CommonUtil.createResult(200, "Ok", result);
-			
+
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
-	
+
 	/**
 	 * Check if userId and otpCode are match
 	 * @param requestBody: userId and otpCode
@@ -464,11 +572,11 @@ public class UserController {
 	Map<String ,Object> authOtpCode(@RequestBody Map<String,Object> requestBody){
 		logger.info("/user/authOtpCode");
 		String userId, otpCode;
-		
+
 		try {
 			userId=requestBody.get("userId").toString().trim();
 			otpCode=requestBody.get("otpCode").toString().trim();
-			
+
 			UserModel userModel = userService.findById(userId);
 			if(userModel==null) {
 				return CommonUtil.createResult(401, "User not exist ", null);
@@ -480,13 +588,13 @@ public class UserController {
 			}else {
 				return CommonUtil.createResult(401, "OtpCode not match", null);
 			}
-			
+
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, otpCode: String} is required", null);
 		}
-		
+
 	}
-	
+
 	@PostMapping("/authLdap")
 	Map<String, Object> authLdap(@RequestBody Map<String, Object> requestBody){
 		logger.info("/user/authLdap");
@@ -501,12 +609,257 @@ public class UserController {
 			}else {
 				return CommonUtil.createResult(401, "userId or password not match", null);
 			}
-			
+
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Bad request: {userId: String, password: String} is required", null);
 		}
 	}
-	
-	
+
+
+	@PostMapping("/sendSms")
+	Map<String, Object> sendSms(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/sendSMS");
+		String recipent, content;
+		try {
+			recipent=requestBody.get("recipent").toString().trim();
+			content=requestBody.get("content").toString().trim();
+			smsService.sendSms(recipent, content);
+			return CommonUtil.createResult(200, "Ok", null);
+
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {recipent: String, content: String} is required", null);
+		}
+	}
+
+	@PostMapping("/sendSmsPrivateKey")
+	Map<String, Object> sendSmsPrivateKey(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/sendSmsPrivateKey");
+		String userId=null;
+		try {
+			userId=requestBody.get("userId").toString().trim();
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		if(userId.isEmpty()) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		UserModel userModel = userService.findById(userId);
+		if(userModel==null) {
+			return CommonUtil.createResult(404, "User not found", null);
+		}
+
+		try {
+			smsService.sendSms(userModel.getPhone1(), userModel.getPrivateKey());
+			logger.info("/user/sendSmsPrivateKey: Ok  "+userId+"  "+userModel.getPhone1());
+			return CommonUtil.createResult(200, "Ok", null);
+		} catch (Exception e) {
+			logger.info("/user/sendSmsPrivateKey: Fail  "+userId+"  "+userModel.getPhone1());
+			return CommonUtil.createResult(400, "Send SMS eror", e.toString());
+		}
+	}
+
+	@PostMapping("/sendSmsActiveCode")
+	Map<String, Object> sendSmsActiveCode(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/sendSmsActiveCode");
+		String userId=null;
+		try {
+			userId=requestBody.get("userId").toString().trim();
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		if(userId.isEmpty()) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		UserModel userModel = userService.findById(userId);
+		if(userModel==null) {
+			return CommonUtil.createResult(404, "User not found", null);
+		}
+
+		try {
+			smsService.sendSms(userModel.getPhone1(), "Active code: "+userModel.getActiveCode());
+			logger.info("/user/sendSmsActiveCode: Ok  "+userId+"  "+userModel.getPhone1());
+			return CommonUtil.createResult(200, "Ok", null);
+		} catch (Exception e) {
+			logger.info("/user/sendSmsActiveCode: Fail  "+userId+"  "+userModel.getPhone1());
+			return CommonUtil.createResult(400, "Send SMS eror", e.toString());
+		}
+	}
+
+	@PostMapping("/sendSmsOtpCode")
+	Map<String, Object> sendSmsOtpCode(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/sendSmsOtpCode");
+		String userId=null;
+		try {
+			userId=requestBody.get("userId").toString().trim();
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		if(userId.isEmpty()) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		UserModel userModel = userService.findById(userId);
+		if(userModel==null) {
+			return CommonUtil.createResult(404, "User not found", null);
+		}
+
+		if(userModel.getEnableSms()==false) {
+			return CommonUtil.createResult(400, "User not enable sms", null);
+		}
+
+		try {
+			logger.info(userModel.getPrivateKey());
+			String otpCode =TOTPUtil.getCode(userModel.getPrivateKey(), TOTPUtil.getSteps(1));
+			smsService.sendSms(userModel.getPhone1(), "OTP: "+otpCode);
+			logger.info("/user/sendSmsOtpCode: Ok  "+userId+"  "+userModel.getPhone1());
+			return CommonUtil.createResult(200, "Ok", null);
+		} catch (Exception e) {
+			e.printStackTrace();
+			logger.info("/user/sendSmsOtpCode: Fail  "+userId+"  "+userModel.getPhone1());
+			return CommonUtil.createResult(400, "Send SMS eror", e.toString());
+		}
+	}
+
+	@PostMapping("/sendEmailPrivateKey")
+	Map<String, Object> sendEmailPrivateKey(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/sendEmailPrivateKey");
+		String userId=null;
+		try {
+			userId=requestBody.get("userId").toString().trim();
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		if(userId.isEmpty()) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		UserModel userModel = userService.findById(userId);
+		if(userModel==null) {
+			return CommonUtil.createResult(404, "User not found", null);
+		}
+
+		try {
+			new Thread(()->{
+				logger.info("sending email private key to "+userModel.getEmail());
+				emailService.sendEmail(userModel.getEmail(), "Your private key", "This is your private key: "+userModel.getPrivateKey());
+
+			}).start();
+
+			logger.info("/user/sendEmailPrivateKey: Ok  "+userId+"  "+userModel.getEmail());
+			return CommonUtil.createResult(200, "Ok", null);
+		} catch (Exception e) {
+			logger.info("/user/sendEmailPrivateKey: Fail  "+userId+"  "+userModel.getEmail());
+			return CommonUtil.createResult(400, "Send email eror", e.toString());
+		}
+	}
+
+	@PostMapping("/sendEmailActiveCode")
+	Map<String, Object> sendEmailActiveCode(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/sendEmailActiveCode");
+		String userId=null;
+		try {
+			userId=requestBody.get("userId").toString().trim();
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		if(userId.isEmpty()) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		UserModel userModel = userService.findById(userId);
+		if(userModel==null) {
+			return CommonUtil.createResult(404, "User not found", null);
+		}
+
+		try {
+			new Thread(()->{
+				logger.info("sending email active code to: "+userModel.getUserId()+" "+userModel.getEmail());
+				emailService.sendEmail(userModel.getEmail(), "Your active code", "This is your active code: "+userModel.getActiveCode());
+
+			}).start();
+
+			logger.info("/user/sendEmailActiveCode: Ok  "+userModel.getUserId()+"  "+userModel.getEmail());
+			return CommonUtil.createResult(200, "Ok", null);
+		} catch (Exception e) {
+			logger.info("/user/sendEmailActiveCode: Fail  "+userModel.getUserId()+"  "+userModel.getEmail());
+			return CommonUtil.createResult(400, "Send email eror", e.toString());
+		}
+	}
+
+	@PostMapping("/sendEmailOtpCode")
+	Map<String, Object> sendEmailOtpCode(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/sendEmailOtpCode");
+		String userId=null;
+		try {
+			userId=requestBody.get("userId").toString().trim();
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		if(userId.isEmpty()) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		UserModel userModel = userService.findById(userId);
+		if(userModel==null) {
+			return CommonUtil.createResult(404, "User not found", null);
+		}
+
+		try {
+			String otpCode =TOTPUtil.getCode(userModel.getPrivateKey(), TOTPUtil.getSteps(1));
+			new Thread(()->{
+				logger.info("sending email otp code to: "+userModel.getUserId()+" "+userModel.getEmail());
+				emailService.sendEmail(userModel.getEmail(), "Your otp code", "This is your otp code: "+otpCode);
+			}).start();
+			logger.info("/user/sendEmailOtpCode: Ok  "+userModel.getUserId()+"  "+userModel.getEmail());
+			return CommonUtil.createResult(200, "Ok", null);
+		} catch (Exception e) {
+			logger.info("/user/sendEmailOtpCode: Fail  "+userModel.getUserId()+"  "+userModel.getEmail());
+			return CommonUtil.createResult(400, "Send email eror", e.toString());
+		}
+	}
+
+	@PostMapping("/checkRequireOtp")
+	Map<String, Object> checkRequireOtp(@RequestBody Map<String, Object> requestBody){
+		logger.info("/user/checkRequireOtp");
+		String userId=null;
+		try {
+			userId=requestBody.get("userId").toString().trim();
+		}catch(Exception e) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		if(userId.isEmpty()) {
+			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
+		}
+
+		UserModel userModel = userService.findById(userId);
+		if(userModel==null) {
+			return CommonUtil.createResult(404, "User not found", null);
+		}
+
+		try {
+			Map<String, Object> result=new HashMap<>();
+			result.put("requireOtp", userModel.getRequired());
+			return CommonUtil.createResult(200, "Ok", result);
+		} catch (Exception e) {
+
+			return CommonUtil.createResult(400, "Send email eror", e.toString());
+		}
+	}
+
+
+
+
+
+
+
 
 }
