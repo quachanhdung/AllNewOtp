@@ -321,9 +321,9 @@ public class MobileController {
 			return CommonUtil.createResult(404, "User already downloaded private key", null);
 		}
 
-		boolean authen = ldapServerService.authen(userId, password);
-		if(authen==false) {
-			return CommonUtil.createResult(401, "Unauthorized", null);
+		Map<String, Object> authen = ldapServerService.authen(userId, password);
+		if(authen==null) {
+			return CommonUtil.createResult(401, "Unauthorized", authen);
 		}
 
 		String salt = deviceId;

@@ -24,6 +24,7 @@ import ngn.otp.otp_core.services.DownloadPrivateKeyService;
 import ngn.otp.otp_core.services.EmailService;
 import ngn.otp.otp_core.services.LdapServerService;
 import ngn.otp.otp_core.services.SmsService;
+import ngn.otp.otp_core.services.SmsVnptService;
 import ngn.otp.otp_core.services.UserApplicationService;
 import ngn.otp.otp_core.services.UserService;
 import ngn.otp.otp_core.utils.CommonUtil;
@@ -40,6 +41,7 @@ public class UserController {
 	private LdapServerService ldapServerService;
 	private DownloadPrivateKeyService downloadPrivateKeyService;
 	private SmsService smsService ;
+	private SmsVnptService smsVnptService;
 	private EmailService emailService;
 	PropUtil prop;
 	private int privateKeyLength = 32;
@@ -50,6 +52,7 @@ public class UserController {
 			LdapServerService ldapServerService,
 			DownloadPrivateKeyService downloadPrivateKeyService,
 			SmsService smsService,
+			SmsVnptService smsVnptService,
 			EmailService emailService,
 			UserApplicationService userApplicationService) {
 		this.userService=userService;
@@ -58,6 +61,7 @@ public class UserController {
 		this.userApplicationService = userApplicationService;
 		this.downloadPrivateKeyService = downloadPrivateKeyService;
 		this.smsService = smsService;
+		this.smsVnptService = smsVnptService;
 		this.emailService = emailService;
 		this.prop = ApplicationContextProvider.getContext().getBean(PropUtil.class);
 
@@ -150,6 +154,7 @@ public class UserController {
 				userModel.setEnable(true);
 				userModel.setDateCreated(new Date());
 				userModel.setOrganization("Peoples");
+				userModel.setEnableSms(true);
 				userService.save(userModel);
 				return CommonUtil.createResult(200, "OK", userModel);
 			}else {
@@ -602,10 +607,14 @@ public class UserController {
 		try {
 			userId=requestBody.get("userId").toString().trim();
 			password=requestBody.get("password").toString().trim();
-			boolean authen = ldapServerService.authen(userId, password);
+			Map<String,Object> authen = ldapServerService.authen(userId, password);
 			logger.info("authLdap "+userId+" "+authen);
-			if(authen) {
-				return CommonUtil.createResult(200, "Ok", null);
+			if(authen!=null) {
+				//insert user to database if not exists
+				addUser(userId,authen);
+
+				
+				return CommonUtil.createResult(200, "Ok", authen);
 			}else {
 				return CommonUtil.createResult(401, "userId or password not match", null);
 			}
@@ -616,6 +625,66 @@ public class UserController {
 	}
 
 
+	private void addUser(String userId, Map<String, Object> authen) {
+		if (userId.contains("@"))
+			userId = userId.substring(0, userId.indexOf("@"));
+		// domain\\username
+		if (userId.contains("\\"))
+			userId = userId.substring(userId.indexOf("\\") + 1);
+
+		String phone="";
+		String email="";
+		String fullName="";
+		for (String key : authen.keySet()) {
+	        System.out.println(key + ":" + authen.get(key));
+	        
+	        if(key.equals(prop.get("ldap.UserFullNameAttName"))) {
+	        	fullName = authen.get(key).toString();
+	        }
+	        
+	        if(key.equals(prop.get("ldap.PhoneAttName"))) {
+	        	phone=authen.get(key).toString();
+	        }
+	        
+	        if(key.equals(prop.get("ldap.EmailAttName"))) {
+	        	email=authen.get(key).toString();
+	        }
+	        
+	    }
+		
+		UserModel userModel=userService.findById(userId);
+		if(userModel==null) {
+			userModel=new UserModel();
+			userModel.setUserId(userId);
+			userModel.setEmail(email);
+			userModel.setPhone1(phone);
+			userModel.setFullName(fullName);
+			userModel.setPrivateKey(TOTPUtil.generatePrivateKey(this.privateKeyLength));
+			userModel.setActiveCode(TOTPUtil.generateRandomNumberString());
+			userModel.setEnable(true);
+			userModel.setDateCreated(new Date());
+			userModel.setOrganization("Peoples");
+			userModel.setEnableSms(true);
+			
+		}else {
+			if(email.isEmpty()==false) {
+				userModel.setEmail(email);
+			}
+			if(phone.isEmpty()==false) {
+				userModel.setPhone1(phone);
+			}
+		
+			if(fullName.isEmpty()==false) {
+				userModel.setFullName(fullName);
+			}
+		
+		}
+		userService.save(userModel);
+	
+		
+		
+	}
+
 	@PostMapping("/sendSms")
 	Map<String, Object> sendSms(@RequestBody Map<String, Object> requestBody){
 		logger.info("/user/sendSMS");
@@ -623,7 +692,8 @@ public class UserController {
 		try {
 			recipent=requestBody.get("recipent").toString().trim();
 			content=requestBody.get("content").toString().trim();
-			smsService.sendSms(recipent, content);
+//			smsService.sendSms(recipent, content);
+			sendSMS(recipent, content+ " Tran trong");
 			return CommonUtil.createResult(200, "Ok", null);
 
 		}catch(Exception e) {
@@ -651,11 +721,12 @@ public class UserController {
 		}
 
 		try {
-			smsService.sendSms(userModel.getPhone1(), userModel.getPrivateKey());
+//			smsService.sendSms(userModel.getPhone1(), userModel.getPrivateKey());
+			sendSMS(userModel.getPhone1(),userModel.getPrivateKey() + " Tran trong");
 			logger.info("/user/sendSmsPrivateKey: Ok  "+userId+"  "+userModel.getPhone1());
 			return CommonUtil.createResult(200, "Ok", null);
 		} catch (Exception e) {
-			logger.info("/user/sendSmsPrivateKey: Fail  "+userId+"  "+userModel.getPhone1());
+			logger.error("/user/sendSmsPrivateKey: Fail  "+userId+"  "+userModel.getPhone1());
 			return CommonUtil.createResult(400, "Send SMS eror", e.toString());
 		}
 	}
@@ -680,11 +751,12 @@ public class UserController {
 		}
 
 		try {
-			smsService.sendSms(userModel.getPhone1(), "Active code: "+userModel.getActiveCode());
+//			smsService.sendSms(userModel.getPhone1(), "Active code: "+userModel.getActiveCode());
+			sendSMS(userModel.getPhone1(), "Active code: "+userModel.getActiveCode()+ " Tran trong");
 			logger.info("/user/sendSmsActiveCode: Ok  "+userId+"  "+userModel.getPhone1());
 			return CommonUtil.createResult(200, "Ok", null);
 		} catch (Exception e) {
-			logger.info("/user/sendSmsActiveCode: Fail  "+userId+"  "+userModel.getPhone1());
+			logger.error("/user/sendSmsActiveCode: Fail  "+userId+"  "+userModel.getPhone1());
 			return CommonUtil.createResult(400, "Send SMS eror", e.toString());
 		}
 	}
@@ -715,12 +787,13 @@ public class UserController {
 		try {
 			logger.info(userModel.getPrivateKey());
 			String otpCode =TOTPUtil.getCode(userModel.getPrivateKey(), TOTPUtil.getSteps(1));
-			smsService.sendSms(userModel.getPhone1(), "OTP: "+otpCode);
+//			smsService.sendSms(userModel.getPhone1(), "OTP: "+otpCode);
+			sendSMS(userModel.getPhone1(),"OTP: "+otpCode+ " Tran trong");
 			logger.info("/user/sendSmsOtpCode: Ok  "+userId+"  "+userModel.getPhone1());
 			return CommonUtil.createResult(200, "Ok", null);
 		} catch (Exception e) {
 			e.printStackTrace();
-			logger.info("/user/sendSmsOtpCode: Fail  "+userId+"  "+userModel.getPhone1());
+			logger.error("/user/sendSmsOtpCode: Fail  "+userId+"  "+userModel.getPhone1());
 			return CommonUtil.createResult(400, "Send SMS eror", e.toString());
 		}
 	}
@@ -754,7 +827,7 @@ public class UserController {
 			logger.info("/user/sendEmailPrivateKey: Ok  "+userId+"  "+userModel.getEmail());
 			return CommonUtil.createResult(200, "Ok", null);
 		} catch (Exception e) {
-			logger.info("/user/sendEmailPrivateKey: Fail  "+userId+"  "+userModel.getEmail());
+			logger.error("/user/sendEmailPrivateKey: Fail  "+userId+"  "+userModel.getEmail());
 			return CommonUtil.createResult(400, "Send email eror", e.toString());
 		}
 	}
@@ -788,7 +861,7 @@ public class UserController {
 			logger.info("/user/sendEmailActiveCode: Ok  "+userModel.getUserId()+"  "+userModel.getEmail());
 			return CommonUtil.createResult(200, "Ok", null);
 		} catch (Exception e) {
-			logger.info("/user/sendEmailActiveCode: Fail  "+userModel.getUserId()+"  "+userModel.getEmail());
+			logger.error("/user/sendEmailActiveCode: Fail  "+userModel.getUserId()+"  "+userModel.getEmail());
 			return CommonUtil.createResult(400, "Send email eror", e.toString());
 		}
 	}
@@ -821,7 +894,7 @@ public class UserController {
 			logger.info("/user/sendEmailOtpCode: Ok  "+userModel.getUserId()+"  "+userModel.getEmail());
 			return CommonUtil.createResult(200, "Ok", null);
 		} catch (Exception e) {
-			logger.info("/user/sendEmailOtpCode: Fail  "+userModel.getUserId()+"  "+userModel.getEmail());
+			logger.error("/user/sendEmailOtpCode: Fail  "+userModel.getUserId()+"  "+userModel.getEmail());
 			return CommonUtil.createResult(400, "Send email eror", e.toString());
 		}
 	}
@@ -855,7 +928,13 @@ public class UserController {
 		}
 	}
 
-
+	private void sendSMS(String recipent, String content) {
+		if(prop.get("sms.provider").equalsIgnoreCase("vnpt")) {
+			this.smsVnptService.sendSMS(recipent, content);
+		}else {
+			this.smsService.sendSms(recipent, content);
+		}
+	}
 
 
 

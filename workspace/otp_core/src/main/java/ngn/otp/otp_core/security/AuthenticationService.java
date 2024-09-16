@@ -48,8 +48,8 @@ public class AuthenticationService {
 //					throw new BadCredentialsException("Invalid API Key");
 //				}
 //			}
-			
-			return new ApiKeyAuthentication(apiKey, AuthorityUtils.NO_AUTHORITIES);
+			System.out.println("ok nha");
+			return new ApiKeyAuthentication(AUTH_TOKEN, AuthorityUtils.NO_AUTHORITIES);
 		}catch(Exception e) {
 			throw new BadCredentialsException("Invalid API Key");
 		}

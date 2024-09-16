@@ -32,47 +32,43 @@ public class LdapServerController {
 	@GetMapping("/getAll")
 	Map<String, Object> getAll(){
 		logger.info("/ldapserver/getAll");
-		return CommonUtil.createResult(0, "Success", ldapServerService.getAll());
+		return CommonUtil.createResult(200, "Success", ldapServerService.getAll());
 	}
 
 	@PostMapping("/add")
 	Map<String,Object> add(@RequestBody Map<String, Object> requestBody) {
 		logger.info("/ldapserver/add");
-		int serverType;
+	
 		boolean defaultServer;
-		String serverUrl, domainName, searchBase, searchFilter,binddn,
-		serverDescription,principal,credential;
+		String serverUrl, searchBase, queryFilter, userDn, resultAttributes, serverDescription;
 		LdapServerModel model = new LdapServerModel();
 		try {
 			serverUrl = requestBody.get("serverUrl").toString().trim();
-			domainName = requestBody.get("domainName").toString().trim();
+		
 			searchBase = requestBody.get("searchBase").toString().trim();
-			searchFilter = requestBody.get("searchFilter").toString().trim();
-			binddn = requestBody.get("binddn").toString().trim();
+			queryFilter = requestBody.get("queryFilter").toString().trim();
+			userDn = requestBody.get("userDn").toString().trim();
+			resultAttributes = requestBody.get("resultAttributes").toString().trim();
 			serverDescription = requestBody.get("serverDescription").toString().trim();
-			principal = requestBody.get("principal").toString().trim();
-			credential = requestBody.get("credential").toString().trim();
 			defaultServer =  (boolean)requestBody.get("defaultServer");
-			serverType =  (int)requestBody.get("serverType");
+
 			
 			model.setServerUrl(serverUrl);
-			model.setDomainName(domainName);
+		
 			model.setSearchBase(searchBase);
-			model.setSearchFilter(searchFilter);
-			model.setBinddn(binddn);
+			model.setQueryFilter(queryFilter);
+			model.setResultAttributes(resultAttributes);
+			model.setUserDn(userDn);
 			model.setServerDescription(serverDescription);
-			model.setPrincipal(principal);
-			model.setCredential(credential);
 			model.setDefaultServer(defaultServer);
-			model.setServerType(serverType);
+		
 
 
 		}catch(Exception e) {
 			return CommonUtil.createResult(400, "Missing field or invalid data type: "
-					+ "{serverUrl:String, domainName:String, "
-					+ "searchBase:String, searchFilter:String, binddn:String "
-					+ "serverDescription:String, principal:String, "
-					+ "credential:String, serverType:int, "
+					+ "{serverUrl:String, "
+					+ "searchBase:String, queryFilter:String, userDn:String, resultAttributes:String "
+					+ "serverDescription:String, serverType:int"
 					+ "defaultServer:boolean", null);
 		}
 		try {
@@ -86,10 +82,10 @@ public class LdapServerController {
 	@PutMapping("/update/{serverId}")
 	Map<String,Object> update(@PathVariable Long serverId, @RequestBody Map<String, Object> requestBody) {
 		logger.info("/ldapserver/update/"+serverId);
-		Integer serverType=null;
 		Boolean defaultServer=null;
-		String serverUrl=null, domainName=null, searchBase=null, searchFilter=null, binddn=null,
-				serverDescription=null,principal=null,credential=null;
+		String serverUrl=null,  searchBase=null, queryFilter=null, userDn=null,
+				serverDescription=null, resultAttributes=null;
+		
 		LdapServerModel model = ldapServerService.findById(serverId);
 		if(model==null) {
 			return CommonUtil.createResult(404, "serverId not found", null);
@@ -102,42 +98,33 @@ public class LdapServerController {
 			}
 		}catch(Exception e) {}
 		
-		try {
-			domainName = requestBody.get("domainName").toString().trim();
-		}catch(Exception e) {}
 		
 		try {
 			searchBase = requestBody.get("searchBase").toString().trim();
 		}catch(Exception e) {}
 		
 		try {
-			searchFilter = requestBody.get("searchFilter").toString().trim();
+			queryFilter = requestBody.get("queryFilter").toString().trim();
 		}catch(Exception e) {}
 		
+		
 		try {
-			binddn = requestBody.get("binddn").toString().trim();
+			resultAttributes = requestBody.get("resultAttributes").toString().trim();
+		}catch(Exception e) {}
+		
+	
+		try {
+			userDn = requestBody.get("userDn").toString().trim();
 		}catch(Exception e) {}
 		
 		try {
 			serverDescription = requestBody.get("serverDescription").toString().trim();
 		}catch(Exception e) {}
 		
-		try {
-			principal = requestBody.get("principal").toString().trim();
-		}catch(Exception e) {}
-		
-		try {
-			credential = requestBody.get("credential").toString().trim();
-		}catch(Exception e) {}
 		
 		try {
 			defaultServer =  (boolean)requestBody.get("defaultServer");
 		}catch(Exception e) {}
-		
-		try {
-			serverType =  (int)requestBody.get("serverType");
-		}catch(Exception e) {}
-		
 		
 		//set to model
 		if(serverUrl!=null) {
@@ -145,32 +132,26 @@ public class LdapServerController {
 				model.setServerUrl(serverUrl);
 			}
 		}
-		if(domainName!=null) {
-			model.setDomainName(domainName);
-		}
+		
 		if(searchBase!=null) {
 			model.setSearchBase(searchBase);
 		}
-		if(searchFilter!=null) {
-			model.setSearchFilter(searchFilter);
+		if(queryFilter!=null) {
+			model.setQueryFilter(queryFilter);
 		}
-		if(binddn!=null) {
-			model.setBinddn(binddn);
+		
+		if(resultAttributes!=null) {
+			model.setResultAttributes(resultAttributes);
+		}
+		if(userDn!=null) {
+			model.setUserDn(userDn);
 		}
 		if(serverDescription!=null) {
 			model.setServerDescription(serverDescription);
 		}
-		if(principal!=null) {
-			model.setPrincipal(principal);
-		}
-		if(credential!=null) {
-			model.setCredential(credential);
-		}
+		
 		if(defaultServer!=null) {
 			model.setDefaultServer(defaultServer);
-		}
-		if(serverType!=null) {
-			model.setServerType(serverType);
 		}
 		
 		try {

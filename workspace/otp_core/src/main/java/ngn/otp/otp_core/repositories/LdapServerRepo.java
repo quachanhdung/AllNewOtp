@@ -8,8 +8,6 @@ import ngn.otp.otp_core.models.LdapServerModel;
 
 public interface LdapServerRepo  extends JpaRepository<LdapServerModel, Long>{
 
-	List<LdapServerModel> findByDomainNameLike(String domainName);
-
 	List<LdapServerModel> findByDefaultServerTrue();
 
 	List<LdapServerModel> findByOrderByDefaultServerDesc();

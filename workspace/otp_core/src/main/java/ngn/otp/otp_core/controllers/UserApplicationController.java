@@ -74,7 +74,7 @@ public class UserApplicationController {
 			return CommonUtil.createResult(400, "applicationId is required", null);
 		}
 	}
-	
+
 	@PostMapping("/add")
 	Map<String, Object> add(@RequestBody Map<String, Object> requestBody){
 		logger.info("/userapplication/add");
@@ -83,7 +83,7 @@ public class UserApplicationController {
 			userId = requestBody.get("userId").toString();
 			applicationId = requestBody.get("applicationId").toString();
 		} catch (Exception e) {
-			return CommonUtil.createResult(400, "userId and applicationId is required", null);
+			return CommonUtil.createResult(400, "userId and applicationId is required", e.toString());
 		}
 		
 		try {
@@ -100,7 +100,7 @@ public class UserApplicationController {
 			userApplicationService.save(model);
 			return CommonUtil.createResult(200, "Ok", model);
 		} catch (Exception e) {
-			return CommonUtil.createResult(400, e.toString(), null);
+			return CommonUtil.createResult(400, e.toString(), e.toString());
 		}
 		
 	}
