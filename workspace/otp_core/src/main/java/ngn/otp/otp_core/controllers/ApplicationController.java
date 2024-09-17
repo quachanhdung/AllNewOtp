@@ -47,7 +47,9 @@ public class ApplicationController {
 			applicationName = requestBody.get("applicationName").toString();
 			description = requestBody.get("description").toString();
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "applicationName and description is required", null);
+			
 		}
 		
 		if(applicationName.trim().isEmpty() || description.trim().isEmpty()) {
@@ -120,6 +122,7 @@ public class ApplicationController {
 			
 			
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, e.toString(), null);
 		}
 	}

@@ -65,6 +65,7 @@ public class LdapServerController {
 
 
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Missing field or invalid data type: "
 					+ "{serverUrl:String, "
 					+ "searchBase:String, queryFilter:String, userDn:String, resultAttributes:String "
@@ -96,7 +97,9 @@ public class LdapServerController {
 			if(serverUrl.isEmpty()) {
 				return CommonUtil.createResult(400, "serverUrl could not be empty", null);
 			}
-		}catch(Exception e) {}
+		}catch(Exception e) {
+			
+		}
 		
 		
 		try {
@@ -180,6 +183,7 @@ public class LdapServerController {
 			
 			
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, e.toString(), null);
 		}
 	}

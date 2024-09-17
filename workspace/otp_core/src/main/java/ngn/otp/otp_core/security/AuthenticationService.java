@@ -51,6 +51,7 @@ public class AuthenticationService {
 			System.out.println("ok nha");
 			return new ApiKeyAuthentication(AUTH_TOKEN, AuthorityUtils.NO_AUTHORITIES);
 		}catch(Exception e) {
+			
 			throw new BadCredentialsException("Invalid API Key");
 		}
 

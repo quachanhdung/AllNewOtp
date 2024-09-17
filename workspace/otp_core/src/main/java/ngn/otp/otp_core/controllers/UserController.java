@@ -128,6 +128,7 @@ public class UserController {
 				phone="";
 			}
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "userId, phone, email are required", null);
 		}
 
@@ -234,6 +235,7 @@ public class UserController {
 				return CommonUtil.createResult(401, "User not exist", null);
 			}
 		} catch (Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(409, "duplicate entry: email or phone", null);
 		}
 	}
@@ -251,6 +253,7 @@ public class UserController {
 			userService.delete(userModel);
 			return CommonUtil.createResult(200, "Ok", null);
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, e.toString(), null);
 		}
 	}
@@ -269,6 +272,7 @@ public class UserController {
 			}
 
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
 		}
 
@@ -288,6 +292,7 @@ public class UserController {
 			}
 
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
 		}
 
@@ -306,6 +311,7 @@ public class UserController {
 			}
 
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
 		}
 
@@ -329,6 +335,7 @@ public class UserController {
 				return CommonUtil.createResult(401, "User not found", null);
 			}
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
@@ -351,6 +358,7 @@ public class UserController {
 				return CommonUtil.createResult(401, "User not found", null);
 			}
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
@@ -392,6 +400,7 @@ public class UserController {
 				return CommonUtil.createResult(401, "User not found", null);
 			}
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String, pinCode: String} is required", null);
 		}
 	}
@@ -412,6 +421,7 @@ public class UserController {
 				return CommonUtil.createResult(401, "User not found", null);
 			}
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String} is required", null);
 		}
 	}
@@ -438,6 +448,7 @@ public class UserController {
 				return CommonUtil.createResult(401, "User not found", null);
 			}
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, e.toString(),null);
 		}
 	}
@@ -460,6 +471,7 @@ public class UserController {
 				return CommonUtil.createResult(401, "User not found", null);
 			}
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
@@ -486,6 +498,7 @@ public class UserController {
 				return CommonUtil.createResult(401, "User not found", null);
 			}
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
@@ -508,6 +521,7 @@ public class UserController {
 				return CommonUtil.createResult(401, "User not found", null);
 			}
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
@@ -564,6 +578,7 @@ public class UserController {
 			return CommonUtil.createResult(200, "Ok", result);
 
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String, enable: boolean} is required", null);
 		}
 	}
@@ -595,6 +610,7 @@ public class UserController {
 			}
 
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String, otpCode: String} is required", null);
 		}
 
@@ -620,6 +636,7 @@ public class UserController {
 			}
 
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {userId: String, password: String} is required", null);
 		}
 	}
@@ -680,8 +697,6 @@ public class UserController {
 		
 		}
 		userService.save(userModel);
-	
-		
 		
 	}
 
@@ -697,6 +712,7 @@ public class UserController {
 			return CommonUtil.createResult(200, "Ok", null);
 
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: {recipent: String, content: String} is required", null);
 		}
 	}
@@ -923,7 +939,7 @@ public class UserController {
 			result.put("requireOtp", userModel.getRequired());
 			return CommonUtil.createResult(200, "Ok", result);
 		} catch (Exception e) {
-
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Send email eror", e.toString());
 		}
 	}

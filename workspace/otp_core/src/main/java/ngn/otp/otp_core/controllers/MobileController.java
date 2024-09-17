@@ -301,6 +301,7 @@ public class MobileController {
 			userId = requestBody.get("userId").toString().trim();
 			password = requestBody.get("password").toString().trim();
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "Bad request: deviceId, userId, password are required", null);
 		}
 

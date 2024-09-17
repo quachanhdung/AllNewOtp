@@ -56,6 +56,7 @@ public class UserApplicationController {
 			}
 			return CommonUtil.createResult(200, "OK", userApplicationService.findByUser(userModel));
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "userId is required", null);
 		}
 	}
@@ -71,6 +72,7 @@ public class UserApplicationController {
 			}
 			return CommonUtil.createResult(200, "OK", userApplicationService.findByApplicationModel(applicationModel));
 		}catch(Exception e) {
+			logger.error(e.toString());
 			return CommonUtil.createResult(400, "applicationId is required", null);
 		}
 	}
