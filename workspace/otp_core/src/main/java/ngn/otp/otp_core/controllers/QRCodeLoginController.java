@@ -116,10 +116,6 @@ public class QRCodeLoginController {
 		return null;
 		
 	}
-	
-	
-
-
 	@PostMapping("/requestWithUserId")
 	Map<String, Object> requestWithUserId(@RequestBody Map<String, Object> requestBody){
 		logger.info("requestWithUserId");

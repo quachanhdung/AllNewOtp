@@ -80,23 +80,23 @@ public class QRCodeLoginModel implements Serializable{
 	}
 
 	public static void main(String args[]) {
-//		HashSet<QRCodeLoginModel> h = new HashSet<>();
-//
-//		QRCodeLoginModel m1 = new QRCodeLoginModel("abc");
-//		QRCodeLoginModel m2 = new QRCodeLoginModel("abc","aaa");
-//		
-//		h.add(m1);
-//
-//		
-//		h.remove(m1);
-//		h.add(m2);
-//		System.out.println("contains: "+h.contains(m1));
-//
-//
-//
-//		for(QRCodeLoginModel m : h) {
-//			System.out.println(m.key+" - "+m.userId);
-//		}
+		HashSet<QRCodeLoginModel> h = new HashSet<>();
+
+		QRCodeLoginModel m1 = new QRCodeLoginModel("abc");
+		QRCodeLoginModel m2 = new QRCodeLoginModel("abc","aaa");
+		
+		h.add(m1);
+
+		
+		h.remove(m1);
+		h.add(m2);
+		System.out.println("contains: "+h.contains(m1));
+
+
+
+		for(QRCodeLoginModel m : h) {
+			System.out.println(m.key+" - "+m.userId);
+		}
 
 
 		
