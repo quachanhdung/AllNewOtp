@@ -53,14 +53,14 @@ public class LdapServerService {
 	public Map<String,Object> authen(String userId, String password) {
 		List<LdapServerModel> listServer =findAll();
 		if(listServer.isEmpty()) return null;
-		
+		Map<String, Object> result=null;
 		for(LdapServerModel model : listServer) {
 			logger.info("server url: "+model.getServerUrl());
 
-			return LdapUtil.authByLdap(model.getServerUrl(),userId,password,model.getUserDn(),model.getSearchBase(),model.getQueryFilter(),model.getResultAttributes());
-			
+			result= LdapUtil.authByLdap(model.getServerUrl(),userId,password,model.getUserDn(),model.getSearchBase(),model.getQueryFilter(),model.getResultAttributes());
+			if(result!=null) return result;
 		}
-		return null;
+		return result;
 		
 	}
 	

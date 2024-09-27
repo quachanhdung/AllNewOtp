@@ -9404,3 +9404,717 @@ Caused by: java.lang.Exception: File not found: /Users/quachanhdung/ngn_working/
 2024-09-17 12:03:58,126 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
 2024-09-17 12:03:58,129 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
 2024-09-17 12:03:58,133 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-17 14:12:01,472 [Worker-103: Launching OtpCoreApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-17 14:12:01,473 [Worker-103: Launching OtpCoreApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-17 14:12:01,480 [Worker-103: Launching OtpCoreApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-17 14:27:00,388 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-18 12:05:33,947 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-18 12:12:09,440 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 12:12:09,481 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-09-18 12:12:10,165 [Worker-31: Building] INFO  c.v.f.server.frontend.FrontendTools - The globally installed Node.js version 14.20.1 is older than the required minimum version 18.0.0. Using Node.js from /Users/quachanhdung/.vaadin.
+2024-09-18 12:12:12,366 [Worker-31: Building] INFO  org.reflections.Reflections - Reflections took 1608 ms to scan 171 urls, producing 9487 keys and 49885 values
+2024-09-18 12:12:12,439 [Worker-31: Building] INFO  c.v.f.s.f.TaskCopyFrontendFiles - Copying frontend resources from jar files ...
+2024-09-18 12:12:12,772 [Worker-31: Building] INFO  c.v.f.s.f.TaskCopyFrontendFiles - Visited 170 resources. Took 332 ms.
+2024-09-18 12:12:12,998 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/test/resources to target/test-classes
+2024-09-18 12:12:14,354 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 12:12:14,375 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 12:12:14,380 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-18 12:14:56,692 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 12:14:56,704 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 12:14:56,707 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-18 19:31:13,198 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 19:31:13,225 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 19:31:13,232 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-18 19:33:10,120 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 19:33:10,143 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 19:33:10,149 [Worker-34: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-18 19:33:19,577 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 19:33:19,584 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 19:33:19,588 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-18 19:41:59,817 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 19:41:59,872 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 19:41:59,899 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-18 19:42:18,681 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 19:42:18,684 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-18 19:42:18,687 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 08:01:25,025 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-19 08:03:07,550 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 08:03:07,590 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 08:03:07,606 [Worker-13: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 08:03:22,118 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 08:03:22,141 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 08:03:22,147 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:07:29,480 [Worker-55: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-19 10:07:30,160 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:07:30,163 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:07:30,171 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:09:27,835 [Worker-57: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-09-19 10:09:28,197 [Worker-57: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-19 10:09:28,957 [Worker-57: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /otp_core/src/main/java
+2024-09-19 10:09:28,958 [Worker-57: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /otp_core/src/main/resources
+2024-09-19 10:09:28,960 [Worker-57: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /otp_core/src/main/resources
+2024-09-19 10:09:28,961 [Worker-57: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /otp_core/src/test/java
+2024-09-19 10:09:28,962 [Worker-57: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /otp_core/src/test/resources
+2024-09-19 10:09:28,964 [Worker-57: Updating Maven Project] ERROR o.e.m.j.i.AbstractJavaProjectConfigurator - Failed to find a compatible VM for environment id 'JavaSE-20', falling back to workspace default
+2024-09-19 10:09:29,216 [Worker-57: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 0.00 sec 
+2024-09-19 10:09:30,496 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:09:30,511 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:09:30,522 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:12:13,236 [Worker-57: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-19 10:12:14,631 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:12:14,639 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:12:14,671 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:12:38,022 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:12:38,026 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:12:38,035 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:17:53,703 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:17:53,734 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-09-19 10:17:53,742 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/test/resources to target/test-classes
+2024-09-19 10:17:53,934 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:17:53,935 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:17:53,938 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:18:10,047 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:18:10,048 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:18:10,052 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:18:17,017 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:18:17,018 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:18:17,020 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:19:22,950 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:19:22,950 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:19:22,953 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:27:07,910 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:27:07,978 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:27:07,984 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:32:25,835 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:32:25,836 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:32:25,841 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:32:57,679 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:32:57,681 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:32:57,683 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:34:08,152 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:34:08,153 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:34:08,156 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:34:37,082 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:34:37,113 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:34:37,120 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:36:08,104 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-19 10:36:08,106 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 10:36:08,108 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 10:40:12,063 [Worker-11: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-19 15:40:48,957 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 15:40:49,212 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 15:40:49,621 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 16:58:02,751 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 16:58:03,020 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 16:58:03,384 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 17:18:20,313 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:18:20,326 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:18:20,331 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 17:20:55,076 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:20:55,089 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:20:55,094 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 17:21:30,424 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:21:30,448 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:21:30,465 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 17:22:15,151 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:22:15,174 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:22:15,188 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 17:23:00,899 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:23:00,910 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:23:00,917 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 17:23:33,372 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:23:33,399 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:23:33,409 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 17:23:35,131 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:23:35,135 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:23:35,138 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-19 17:24:13,912 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:24:13,922 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-19 17:24:13,926 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:12:23,121 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-21 18:21:00,033 [Worker-35: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:21:01,243 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:21:01,281 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:21:01,293 [Worker-35: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:21:03,053 [Worker-33: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:21:04,972 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:21:04,976 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:21:04,991 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:24:16,343 [Worker-12: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:24:16,953 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:24:16,955 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:24:16,961 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:24:38,636 [Worker-12: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:24:39,228 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:24:39,229 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:24:39,236 [Worker-12: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:26:46,751 [Worker-43: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:26:48,617 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:26:48,620 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:26:48,643 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:30:46,282 [Worker-46: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:30:47,492 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.3.4/spring-boot-starter-log4j2-3.3.4.pom
+2024-09-21 18:30:47,518 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.3.4/spring-boot-starter-log4j2-3.3.4.pom
+2024-09-21 18:30:47,842 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.3.4/spring-boot-starter-log4j2-3.3.4.jar
+2024-09-21 18:30:47,848 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.3.4/spring-boot-starter-log4j2-3.3.4.jar
+2024-09-21 18:30:48,368 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:30:48,369 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:30:48,381 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:30:49,245 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.3.4/spring-boot-starter-log4j2-3.3.4-sources.jar
+2024-09-21 18:30:49,249 [Worker-45: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.3.4/spring-boot-starter-log4j2-3.3.4-sources.jar
+2024-09-21 18:30:49,251 [Worker-45: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-log4j2:3.3.4
+2024-09-21 18:31:33,086 [Worker-47: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:31:33,656 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:31:33,686 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:31:33,695 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:35:04,388 [Worker-49: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:35:05,979 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:35:06,073 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:35:06,112 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:36:41,671 [Worker-50: Launching OtpCoreApplication] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:36:43,130 [Worker-50: Launching OtpCoreApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:36:43,181 [Worker-50: Launching OtpCoreApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:36:43,190 [Worker-50: Launching OtpCoreApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:39:04,919 [Worker-52: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:39:05,550 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:39:05,578 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:39:05,586 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:39:33,691 [Worker-51: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:39:34,227 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:39:34,228 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:39:34,235 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:40:25,605 [Worker-48: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:40:27,367 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:40:27,442 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:40:27,465 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:43:48,502 [Worker-52: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:43:49,789 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:43:49,793 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:43:49,801 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:44:07,286 [Worker-56: Launching OtpCoreApplication] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:44:07,516 [Worker-56: Launching OtpCoreApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:44:07,516 [Worker-56: Launching OtpCoreApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:44:07,519 [Worker-56: Launching OtpCoreApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:44:55,665 [Worker-56: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:44:56,171 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:44:56,172 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:44:56,177 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:45:40,321 [Worker-46: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:45:41,855 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:45:41,910 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:45:41,924 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:45:57,755 [Worker-46: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:45:58,001 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:45:58,013 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:45:58,015 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:46:17,935 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:46:17,955 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:46:17,962 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:49:18,041 [Worker-56: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:49:18,716 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:49:18,717 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:49:18,725 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:49:42,851 [Worker-58: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:49:44,158 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:49:44,239 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:49:44,285 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:50:13,093 [Worker-56: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:50:13,423 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:50:13,423 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 18:50:13,425 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 18:50:20,102 [Worker-56: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2024-09-21 18:50:20,431 [Worker-56: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 18:50:21,077 [Worker-56: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /otp_core/src/main/java
+2024-09-21 18:50:21,078 [Worker-56: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /otp_core/src/main/resources
+2024-09-21 18:50:21,079 [Worker-56: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /otp_core/src/main/resources
+2024-09-21 18:50:21,080 [Worker-56: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /otp_core/src/test/java
+2024-09-21 18:50:21,080 [Worker-56: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /otp_core/src/test/resources
+2024-09-21 18:50:21,088 [Worker-56: Updating Maven Project] ERROR o.e.m.j.i.AbstractJavaProjectConfigurator - Failed to find a compatible VM for environment id 'JavaSE-20', falling back to workspace default
+2024-09-21 18:50:21,473 [Worker-56: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2024-09-21 18:50:22,590 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:50:22,604 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 18:50:22,610 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 20:37:52,494 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:37:52,521 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:37:52,527 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 20:42:56,912 [Worker-68: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 20:42:57,493 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 20:42:57,494 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 20:42:57,498 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 20:44:25,133 [Worker-59: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 20:44:26,615 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:44:26,665 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:44:26,697 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 20:44:46,622 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:44:46,659 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:44:46,676 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 20:46:48,541 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:46:48,557 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:46:48,565 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 20:48:35,868 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 20:48:35,873 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:48:35,880 [Worker-74: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 20:55:48,185 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.24.0/log4j-bom-2.24.0.pom
+2024-09-21 20:55:48,200 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.24.0/log4j-bom-2.24.0.pom
+2024-09-21 20:55:48,263 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/logging-parent/11.2.0/logging-parent-11.2.0.pom
+2024-09-21 20:55:48,307 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/logging-parent/11.2.0/logging-parent-11.2.0.pom
+2024-09-21 20:55:48,373 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/apache/33/apache-33.pom
+2024-09-21 20:55:48,380 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/apache/33/apache-33.pom
+2024-09-21 20:55:48,885 [Worker-76: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 20:55:49,050 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.24.0/log4j-to-slf4j-2.24.0.pom
+2024-09-21 20:55:49,055 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.24.0/log4j-to-slf4j-2.24.0.pom
+2024-09-21 20:55:49,101 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.24.0/log4j-2.24.0.pom
+2024-09-21 20:55:49,119 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.24.0/log4j-2.24.0.pom
+2024-09-21 20:55:49,190 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-bom/3.0.22/groovy-bom-3.0.22.pom
+2024-09-21 20:55:49,201 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-bom/3.0.22/groovy-bom-3.0.22.pom
+2024-09-21 20:55:49,260 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.17.2/jackson-bom-2.17.2.pom
+2024-09-21 20:55:49,271 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.17.2/jackson-bom-2.17.2.pom
+2024-09-21 20:55:49,325 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/9.4.55.v20240627/jetty-bom-9.4.55.v20240627.pom
+2024-09-21 20:55:49,332 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/9.4.55.v20240627/jetty-bom-9.4.55.v20240627.pom
+2024-09-21 20:55:49,389 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.3/junit-bom-5.10.3.pom
+2024-09-21 20:55:49,395 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.3/junit-bom-5.10.3.pom
+2024-09-21 20:55:49,465 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/5.3.39/spring-framework-bom-5.3.39.pom
+2024-09-21 20:55:49,467 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/5.3.39/spring-framework-bom-5.3.39.pom
+2024-09-21 20:55:49,581 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.24.0/log4j-api-2.24.0.pom
+2024-09-21 20:55:49,583 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.24.0/log4j-api-2.24.0.pom
+2024-09-21 20:55:49,733 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.0/log4j-slf4j2-impl-2.24.0.pom
+2024-09-21 20:55:49,735 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.0/log4j-slf4j2-impl-2.24.0.pom
+2024-09-21 20:55:49,786 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.24.0/log4j-core-2.24.0.pom
+2024-09-21 20:55:49,793 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.24.0/log4j-core-2.24.0.pom
+2024-09-21 20:55:49,839 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-jul/2.24.0/log4j-jul-2.24.0.pom
+2024-09-21 20:55:49,845 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-jul/2.24.0/log4j-jul-2.24.0.pom
+2024-09-21 20:55:49,996 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.24.0/log4j-to-slf4j-2.24.0.jar
+2024-09-21 20:55:50,003 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.24.0/log4j-to-slf4j-2.24.0.jar
+2024-09-21 20:55:50,047 [BasicRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.0/log4j-slf4j2-impl-2.24.0.jar
+2024-09-21 20:55:50,060 [BasicRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.0/log4j-slf4j2-impl-2.24.0.jar
+2024-09-21 20:55:50,169 [BasicRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.24.0/log4j-api-2.24.0.jar
+2024-09-21 20:55:50,183 [BasicRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-jul/2.24.0/log4j-jul-2.24.0.jar
+2024-09-21 20:55:50,188 [BasicRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.24.0/log4j-core-2.24.0.jar
+2024-09-21 20:55:50,201 [BasicRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-jul/2.24.0/log4j-jul-2.24.0.jar
+2024-09-21 20:55:50,346 [BasicRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.24.0/log4j-api-2.24.0.jar
+2024-09-21 20:55:50,747 [BasicRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.24.0/log4j-core-2.24.0.jar
+2024-09-21 20:55:50,801 [Worker-76: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp.otpadmin:otpadmin:1.0-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_admin/pom.xml.
+2024-09-21 20:55:51,249 [Worker-76: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 20:55:52,662 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 20:55:52,668 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 20:55:52,682 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 20:55:53,072 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.24.0/log4j-to-slf4j-2.24.0-sources.jar
+2024-09-21 20:55:53,111 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.24.0/log4j-to-slf4j-2.24.0-sources.jar
+2024-09-21 20:55:53,120 [Worker-78: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.logging.log4j:log4j-to-slf4j:2.24.0
+2024-09-21 20:55:53,274 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.0/log4j-slf4j2-impl-2.24.0-sources.jar
+2024-09-21 20:55:53,285 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.0/log4j-slf4j2-impl-2.24.0-sources.jar
+2024-09-21 20:55:53,289 [Worker-78: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.logging.log4j:log4j-slf4j2-impl:2.24.0
+2024-09-21 20:55:53,457 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.24.0/log4j-api-2.24.0-sources.jar
+2024-09-21 20:55:53,611 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.24.0/log4j-api-2.24.0-sources.jar
+2024-09-21 20:55:53,612 [Worker-78: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.logging.log4j:log4j-api:2.24.0
+2024-09-21 20:55:53,793 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.24.0/log4j-core-2.24.0-sources.jar
+2024-09-21 20:55:54,113 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.24.0/log4j-core-2.24.0-sources.jar
+2024-09-21 20:55:54,114 [Worker-78: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.logging.log4j:log4j-core:2.24.0
+2024-09-21 20:55:54,448 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-jul/2.24.0/log4j-jul-2.24.0-sources.jar
+2024-09-21 20:55:54,457 [Worker-78: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-jul/2.24.0/log4j-jul-2.24.0-sources.jar
+2024-09-21 20:55:54,459 [Worker-78: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.logging.log4j:log4j-jul:2.24.0
+2024-09-21 20:56:40,244 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:56:40,275 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 20:56:40,280 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 20:58:49,582 [Worker-76: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp.otpadmin:otpadmin:1.0-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_admin/pom.xml.
+2024-09-21 20:58:51,270 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven.vaadin.com/vaadin-addons/org/springframework/boot/spring-boot-starter-log4j2/3.2.4/spring-boot-starter-log4j2-3.2.4.pom
+2024-09-21 20:58:51,493 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.2.4/spring-boot-starter-log4j2-3.2.4.pom
+2024-09-21 20:58:51,510 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.2.4/spring-boot-starter-log4j2-3.2.4.pom
+2024-09-21 20:58:52,061 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven.vaadin.com/vaadin-addons/org/springframework/boot/spring-boot-starter-log4j2/3.2.4/spring-boot-starter-log4j2-3.2.4.jar
+2024-09-21 20:58:53,166 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.2.4/spring-boot-starter-log4j2-3.2.4.jar
+2024-09-21 20:58:53,280 [Worker-76: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.2.4/spring-boot-starter-log4j2-3.2.4.jar
+2024-09-21 20:58:53,718 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 20:58:53,744 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-09-21 20:58:53,750 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/test/resources to target/test-classes
+2024-09-21 20:58:56,692 [Worker-73: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven.vaadin.com/vaadin-addons/org/springframework/boot/spring-boot-starter-log4j2/3.2.4/spring-boot-starter-log4j2-3.2.4-sources.jar
+2024-09-21 20:58:56,953 [Worker-73: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.2.4/spring-boot-starter-log4j2-3.2.4-sources.jar
+2024-09-21 20:58:56,980 [Worker-73: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-log4j2/3.2.4/spring-boot-starter-log4j2-3.2.4-sources.jar
+2024-09-21 20:58:56,988 [Worker-73: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework.boot:spring-boot-starter-log4j2:3.2.4
+2024-09-21 21:00:09,788 [Worker-77: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp.otpadmin:otpadmin:1.0-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_admin/pom.xml.
+2024-09-21 21:00:11,832 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:00:11,932 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src/main/resources to target/classes
+2024-09-21 21:00:11,970 [Worker-77: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/test/resources to target/test-classes
+2024-09-21 21:00:49,254 [Worker-79: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp.otpadmin:otpadmin:1.0-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_admin/pom.xml.
+2024-09-21 21:00:49,920 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:00:49,921 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:00:49,923 [Worker-79: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/test/resources to target/test-classes
+2024-09-21 21:02:06,656 [Worker-82: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:02:07,182 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:02:07,183 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:02:07,186 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:07:56,752 [Worker-86: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:07:58,087 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:07:58,106 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:07:58,142 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:09:30,039 [Worker-86: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:09:30,369 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:09:30,388 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:09:30,393 [Worker-86: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:12:50,235 [Worker-91: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:12:50,788 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:12:50,812 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:12:50,817 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:13:55,844 [Worker-87: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:13:56,421 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:13:56,421 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:13:56,428 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:14:22,432 [Worker-87: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:14:22,684 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:14:22,685 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:14:22,687 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:15:26,910 [Worker-88: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:15:28,026 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:15:28,032 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:15:28,047 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:15:58,563 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:15:58,594 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:15:58,596 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:17:22,668 [Worker-87: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:17:22,951 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:17:22,951 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:17:22,954 [Worker-87: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:17:48,788 [Worker-92: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:17:49,288 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:17:49,315 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:17:49,321 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:18:05,487 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345 [1020])
+2024-09-21 21:18:05,489 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345
+2024-09-21 21:18:05,490 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/aopalliance-1.0.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/guice-5.1.0.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/httpclient-4.5.14.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/httpcore-4.4.16.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/jansi-2.4.0.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/jcl-over-slf4j-1.7.36.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-artifact-3.9.5.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-builder-support-3.9.5.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-compat-3.9.5.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-core-3.9.5.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-embedder-3.9.5.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-model-3.9.5.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-model-builder-3.9.5.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-plugin-api-3.9.5.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-repository-metadata-3.9.5.jar
+2024-09-21 21:18:05,491 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-resolver-api-1.9.16.jar
+2024-09-21 21:18:05,492 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-resolver-connector-basic-1.9.16.jar
+2024-09-21 21:18:05,492 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-resolver-impl-1.9.16.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-resolver-named-locks-1.9.16.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-resolver-provider-3.9.5.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-resolver-spi-1.9.16.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-resolver-transport-file-1.9.16.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-resolver-transport-http-1.9.16.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-resolver-transport-wagon-1.9.16.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-resolver-util-1.9.16.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-settings-3.9.5.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-settings-builder-3.9.5.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/maven-shared-utils-3.3.4.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/org.eclipse.sisu.inject-0.3.5.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/org.eclipse.sisu.plexus-0.3.5.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/plexus-build-api-0.0.7.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/plexus-cipher-2.0.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/plexus-classworlds-2.7.0.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/plexus-component-annotations-2.1.0.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/plexus-interpolation-1.26.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/plexus-sec-dispatcher-2.0.jar
+2024-09-21 21:18:05,493 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/plexus-utils-3.5.1.jar
+2024-09-21 21:18:05,494 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/wagon-file-3.5.3.jar
+2024-09-21 21:18:05,494 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/wagon-http-3.5.3.jar
+2024-09-21 21:18:05,494 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/wagon-http-shared-3.5.3.jar
+2024-09-21 21:18:05,494 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.500.20231113-2345/jars/wagon-provider-api-3.5.3.jar
+2024-09-21 21:18:05,495 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_32.1.3.jre [982])
+2024-09-21 21:18:05,495 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/com.google.guava_32.1.3.jre.jar
+2024-09-21 21:18:05,495 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.9 [977])
+2024-09-21 21:18:05,495 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/slf4j.api_2.0.9.jar
+2024-09-21 21:18:05,495 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [38])
+2024-09-21 21:18:05,495 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/javax.inject_1.0.0.v20220405-0441.jar
+2024-09-21 21:18:05,495 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20230504-0748 [990])
+2024-09-21 21:18:05,495 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/javax.annotation_1.3.5.v20230504-0748.jar
+2024-09-21 21:18:05,496 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.6.0 [992])
+2024-09-21 21:18:05,496 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.apache.commons.cli_1.6.0.jar
+2024-09-21 21:18:05,496 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [76])
+2024-09-21 21:18:05,497 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.apache.commons.commons-codec_1.16.0.jar
+2024-09-21 21:18:05,497 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.13.0 [994])
+2024-09-21 21:18:05,499 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/org.apache.commons.lang3_3.13.0.jar
+2024-09-21 21:18:05,499 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [983])
+2024-09-21 21:18:05,499 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: /Users/quachanhdung/.p2/pool/plugins/com.google.guava.failureaccess_1.0.2.jar
+2024-09-21 21:18:05,503 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "/Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core":
+2024-09-21 21:18:05,504 [Worker-92: Launching Executing clean in _Users_quachanhdung_ngn_working_AllNewOtp_workspace_otp_core] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean
+2024-09-21 21:18:15,404 [Worker-90: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:18:15,684 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:18:15,693 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:18:15,698 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:18:52,645 [Worker-88: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:18:53,674 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:18:53,722 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:18:53,737 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:19:06,339 [Worker-88: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ngn.otp:otp_core:0.0.1-SNAPSHOT @ /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/pom.xml.
+2024-09-21 21:19:06,657 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:19:06,668 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:19:06,671 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:21:57,308 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:21:57,311 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:21:57,314 [Worker-91: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-21 21:25:10,344 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-21 21:25:10,351 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-21 21:25:10,360 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-26 10:30:43,716 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-09-26 11:04:39,282 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:04:39,328 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:04:39,338 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-26 11:40:42,418 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:40:42,439 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:40:42,443 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-26 11:44:53,381 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:44:53,392 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:44:53,397 [Worker-52: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-26 11:46:00,614 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:46:00,623 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:46:00,628 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-26 11:46:17,405 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:46:17,412 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:46:17,418 [Worker-53: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-26 11:47:14,433 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:47:14,437 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:47:14,441 [Worker-54: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-26 11:47:37,241 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:47:37,279 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:47:37,301 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-26 11:48:13,159 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:48:13,166 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:48:13,174 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-26 11:48:59,304 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:48:59,306 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-26 11:48:59,310 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:47:46,014 [Worker-70: Launching QRCodeLoginModel] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:47:46,031 [Worker-70: Launching QRCodeLoginModel] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:47:46,041 [Worker-70: Launching QRCodeLoginModel] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:49:45,103 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:49:45,107 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:49:45,111 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:50:04,091 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:50:04,093 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:50:04,096 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:50:45,414 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:50:45,416 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:50:45,420 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:51:41,031 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:51:41,045 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:51:41,053 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:52:06,576 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:52:06,583 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:52:06,587 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:53:19,690 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:53:19,693 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:53:19,695 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:53:38,824 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:53:38,826 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:53:38,829 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:54:50,934 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:54:50,946 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:54:50,953 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:54:56,723 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:54:56,728 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:54:56,730 [Worker-71: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:55:14,827 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:55:14,831 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:55:14,833 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:55:40,086 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:55:40,108 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:55:40,114 [Worker-73: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:56:52,417 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:56:52,423 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:56:52,426 [Worker-68: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 09:57:03,097 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:57:03,099 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 09:57:03,100 [Worker-72: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 10:02:33,926 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 10:02:33,999 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 10:02:34,032 [Worker-76: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 10:13:45,856 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 10:13:45,877 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 10:13:45,884 [Worker-82: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 10:21:22,947 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 10:21:22,962 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 10:21:22,970 [Worker-85: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 13:16:32,234 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:16:32,243 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:16:32,245 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 13:19:29,496 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:19:29,520 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:19:29,536 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 13:21:24,797 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:21:24,803 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:21:24,805 [Worker-89: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 13:21:30,954 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:21:30,956 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:21:30,958 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 13:22:08,996 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:22:09,000 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:22:09,002 [Worker-92: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 13:25:33,205 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:25:33,208 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:25:33,212 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 13:33:07,768 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:33:07,798 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:33:07,814 [Worker-90: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 13:33:37,698 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:33:37,702 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 13:33:37,706 [Worker-93: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:04:42,787 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:04:42,792 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:04:42,800 [Worker-94: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:06:27,237 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:06:27,252 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:06:27,260 [Worker-97: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:07:22,201 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:07:22,205 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:07:22,207 [Worker-99: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:12:17,257 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-27 14:12:17,272 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-27 14:12:17,295 [Worker-96: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:26:57,746 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:26:57,757 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:26:57,761 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:28:38,656 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:28:38,661 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-27 14:28:38,663 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:34:57,517 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:34:57,534 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:34:57,541 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:37:59,649 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:37:59,652 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:37:59,654 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:38:39,376 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:38:39,379 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:38:39,383 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:40:24,791 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:40:24,818 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:40:24,829 [Worker-88: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:42:29,934 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:42:29,940 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:42:29,942 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:43:07,405 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:43:07,408 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-27 14:43:07,410 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:46:09,909 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:46:09,938 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:46:09,953 [Worker-106: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:46:12,832 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:46:12,836 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:46:12,839 [Worker-109: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 14:47:17,239 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 14:47:17,245 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-27 14:47:17,246 [Worker-108: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:07:12,832 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:07:12,850 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:07:12,857 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:09:24,185 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:09:24,189 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src/main/resources to target/classes
+2024-09-27 15:09:24,191 [Worker-111: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:15:33,348 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:15:33,351 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:15:33,353 [Worker-114: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:19:43,190 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:19:43,210 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:19:43,219 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:22:03,062 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:22:03,068 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:22:03,072 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:22:46,684 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:22:46,688 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:22:46,691 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:24:37,968 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:24:37,978 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:24:37,981 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:25:35,436 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:25:35,438 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:25:35,439 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:26:10,745 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:26:10,776 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:26:10,792 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:26:42,206 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:26:42,209 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:26:42,211 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:27:27,802 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:27:27,805 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:27:27,807 [Worker-115: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:27:42,211 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:27:42,214 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:27:42,216 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:30:05,263 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:30:05,279 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:30:05,296 [Worker-102: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:31:42,383 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:31:42,386 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:31:42,388 [Worker-117: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:33:28,660 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:33:28,662 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:33:28,666 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:34:01,220 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:34:01,241 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:34:01,250 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:35:01,464 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:35:01,468 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:35:01,470 [Worker-112: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 15:35:53,353 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:35:53,355 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 15:35:53,358 [Worker-116: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:39:32,965 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:39:32,976 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:39:32,977 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:41:10,810 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:41:10,833 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:41:10,841 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:41:54,237 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:41:54,241 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:41:54,242 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:42:21,104 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:42:21,107 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:42:21,109 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:42:34,865 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:42:34,867 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:42:34,869 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:43:22,692 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:43:22,694 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:43:22,719 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:44:58,833 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:44:58,836 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:44:58,837 [Worker-120: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:45:38,877 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:45:38,903 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:45:38,913 [Worker-123: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:46:43,592 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:46:43,596 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:46:43,597 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:48:50,476 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:48:50,479 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:48:50,485 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:49:27,086 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:49:27,088 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:49:27,090 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:56:36,966 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:56:37,009 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:56:37,033 [Worker-125: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:57:35,557 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:57:35,564 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:57:35,567 [Worker-119: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 16:57:53,532 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:57:53,534 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 16:57:53,536 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 17:37:16,600 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:37:16,621 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:37:16,634 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 17:37:19,693 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:37:19,696 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:37:19,699 [Worker-113: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 17:38:03,556 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:38:03,559 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:38:03,562 [Worker-122: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 17:41:32,035 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:41:32,043 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:41:32,046 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 17:42:29,247 [Worker-133: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:42:29,255 [Worker-133: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:42:29,259 [Worker-133: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources
+2024-09-27 17:44:15,727 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:44:15,748 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src/main/resources to target/classes
+2024-09-27 17:44:15,759 [Worker-131: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /Users/quachanhdung/ngn_working/AllNewOtp/workspace/otp_core/src/test/resources

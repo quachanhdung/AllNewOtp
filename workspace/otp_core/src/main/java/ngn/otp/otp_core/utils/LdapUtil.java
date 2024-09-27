@@ -89,12 +89,13 @@ public class LdapUtil {
 		env.put(Context.SECURITY_AUTHENTICATION, "simple");
 		env.put(Context.SECURITY_PRINCIPAL, userDn);
 		env.put(Context.SECURITY_CREDENTIALS, password);
+		env.put("com.sun.jndi.ldap.connect.timeout", "5000");
 
 		SearchControls searchControls = new SearchControls();
 		searchControls.setReturningAttributes(returningAttributes);
 		searchControls.setSearchScope(SearchControls.SUBTREE_SCOPE);
 
-		Map<String, Object> map = new HashMap<String, Object>();
+		Map<String, Object> map = null;
 
 		DirContext ctx = null;
 
@@ -103,7 +104,7 @@ public class LdapUtil {
 			ctx = new InitialDirContext(env);
 
 			NamingEnumeration<SearchResult> results = ctx.search(searchBase, queryFilter, searchControls);			
-
+			map = new HashMap<String, Object>();
 			while (results.hasMoreElements()) {
 
 				SearchResult result = results.next();

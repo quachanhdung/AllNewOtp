@@ -17,7 +17,7 @@ public class UserModel {
     @Column(name = "userid", nullable = false)
     private String userId;
 
-    @Column(name = "phone1",unique=true, nullable = false)
+    @Column(name = "phone1",unique=true, nullable = true)
     private String phone1;
 
     @Column(name = "phone2")
@@ -59,7 +59,7 @@ public class UserModel {
     @Column(name = "enableappcode")
     private Boolean enableAppCode=false;
 
-    @Column(name = "email",unique=true,nullable = false)
+    @Column(name = "email",unique=true,nullable = true)
     private String email;
 
     @Column(name = "jobtitle")

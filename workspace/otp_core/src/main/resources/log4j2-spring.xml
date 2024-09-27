@@ -8,7 +8,7 @@
         </Console>
 
         <RollingFile name="RollingFile"
-            fileName="./logs/otp_core.log"
+            fileName="./logs/otpcore.log"
             filePattern="./logs/$${date:yyyy-MM}/chatservice-%d{-dd-MMMM-yyyy}-%i.log.gz">
             <PatternLayout>
                 <pattern>%d %p %C{1.} [%t] %m%n</pattern>
@@ -39,12 +39,10 @@
         LOG everything at INFO level
         <Root level="info">
             <AppenderRef ref="Console" />
-            <!-- <AppenderRef ref="RollingFile" />
-    		<AppenderRef ref="Syslog" /> -->
         </Root>
 
-       LOG "ngn.chat" at TRACE level
-     <Logger name="ngn.chat" level="info">
+       LOG "ngn.otp.otp_core" at TRACE level
+     <Logger name="ngn.otp.otp_core" level="info">
      	<AppenderRef ref="RollingFile" />
      </Logger>
     </Loggers>

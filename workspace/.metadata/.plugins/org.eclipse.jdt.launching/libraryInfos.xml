@@ -25,5 +25,7 @@
         </endorsedDirs>
     </libraryInfo>
     <libraryInfo home="/Users/quachanhdung/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.1.v20231028-0937" version="21.0.1"/>
+    <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home" version="11.0.23"/>
+    <libraryInfo home="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home" version="17.0.12"/>
     <libraryInfo home="/Users/quachanhdung/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.1.v20231028-0937/jre" version="21.0.1"/>
 </libraryInfos>

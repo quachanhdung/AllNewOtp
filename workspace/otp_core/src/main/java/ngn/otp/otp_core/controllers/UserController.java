@@ -162,7 +162,8 @@ public class UserController {
 				return CommonUtil.createResult(409, "User exist", null);
 			}
 		} catch (Exception e) {
-			return CommonUtil.createResult(409,"duplicate entry: email or phone",null);
+			logger.error(e.toString());
+			return CommonUtil.createResult(409,"duplicate entry: email or phone",e.toString());
 		}
 	}
 
@@ -627,7 +628,12 @@ public class UserController {
 			logger.info("authLdap "+userId+" "+authen);
 			if(authen!=null) {
 				//insert user to database if not exists
-				addUser(userId,authen);
+				try {
+					addUser(userId,authen);
+				} catch (Exception e) {
+					e.printStackTrace();
+					logger.error(e.toString());
+				}
 
 				
 				return CommonUtil.createResult(200, "Ok", authen);
@@ -673,8 +679,15 @@ public class UserController {
 		if(userModel==null) {
 			userModel=new UserModel();
 			userModel.setUserId(userId);
-			userModel.setEmail(email);
-			userModel.setPhone1(phone);
+			if(email.trim().isEmpty()==false) {
+				userModel.setEmail(email);
+			}
+			if(phone.trim().isEmpty()==false) {
+				userModel.setPhone1(phone);
+			}
+			if(fullName.trim().isEmpty()==false) {
+				userModel.setFullName(fullName);
+			}
 			userModel.setFullName(fullName);
 			userModel.setPrivateKey(TOTPUtil.generatePrivateKey(this.privateKeyLength));
 			userModel.setActiveCode(TOTPUtil.generateRandomNumberString());
@@ -684,14 +697,14 @@ public class UserController {
 			userModel.setEnableSms(true);
 			
 		}else {
-			if(email.isEmpty()==false) {
+			if(email.trim().isEmpty()==false) {
 				userModel.setEmail(email);
 			}
-			if(phone.isEmpty()==false) {
+			if(phone.trim().isEmpty()==false) {
 				userModel.setPhone1(phone);
 			}
 		
-			if(fullName.isEmpty()==false) {
+			if(fullName.trim().isEmpty()==false) {
 				userModel.setFullName(fullName);
 			}
 		
