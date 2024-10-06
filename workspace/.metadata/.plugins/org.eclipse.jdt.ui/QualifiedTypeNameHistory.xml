@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.naming.directory.DirContext"/>
-    <fullyQualifiedTypeName name="javax.naming.directory.InitialDirContext"/>
-    <fullyQualifiedTypeName name="javax.naming.NamingException"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="ngn.otp.otp_core.models.UserModel"/>
-    <fullyQualifiedTypeName name="ngn.otp.otp_core.utils.AES"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.models.DownloadPrivateKeyModel"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.services.DownloadPrivateKeyService"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.services.LdapServerService"/>
-    <fullyQualifiedTypeName name="ngn.otp.otp_core.utils.CommonUtil"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.utils.SMSUtil"/>
     <fullyQualifiedTypeName name="jakarta.mail.internet.MimeMessage"/>
     <fullyQualifiedTypeName name="jakarta.mail.MessagingException"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.services.SmsService"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.utils.TOTPUtil"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.services.EmailService"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -57,7 +47,17 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.utils.LdapUtil"/>
     <fullyQualifiedTypeName name="ngn.otp.otp_core.services.SmsVnptService"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
     <fullyQualifiedTypeName name="org.slf4j.Logger"/>
-    <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="ngn.otp.otp_core.utils.CommonUtil"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="ngn.otp.otp_core.services.QRCodeLoginService"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="ngn.otp.otp_core.models.QRCodeLoginModel"/>
 </qualifiedTypeNameHistroy>

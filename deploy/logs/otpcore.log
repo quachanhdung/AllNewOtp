@@ -1,0 +1,152 @@
+2024-10-06 22:56:19,747 INFO o.s.b.StartupInfoLogger [main] Starting OtpCoreApplication v0.0.1-SNAPSHOT using Java 21.0.1 with PID 43603 (/Users/quachanhdung/ngn_working/AllNewOtp/deploy/otp_core.jar started by quachanhdung in /Users/quachanhdung/ngn_working/AllNewOtp/deploy)
+2024-10-06 22:56:19,754 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-10-06 22:56:21,742 INFO n.o.o.s.QRCodeLoginService [main] QRCodeLoginService start ...
+2024-10-06 22:56:21,742 INFO n.o.o.u.PropUtil [main] PropUtil start ...
+2024-10-06 22:56:21,779 INFO n.o.o.s.EmailService [main] mail service start...
+2024-10-06 22:56:22,074 INFO o.s.b.StartupInfoLogger [main] Started OtpCoreApplication in 2.64 seconds (process running for 3.188)
+2024-10-06 22:56:41,873 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-2] requestWithKey
+2024-10-06 22:56:41,873 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] insert
+2024-10-06 22:56:41,873 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-2] waiting time: 60
+2024-10-06 22:56:41,873 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] get
+2024-10-06 22:56:41,873 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] 1
+2024-10-06 22:56:41,873 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-2] 27E0F314BF897BD12C5B6DECA5F32C30 
+2024-10-06 22:56:42,875 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] get
+2024-10-06 22:56:42,876 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] 1
+2024-10-06 22:56:42,877 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-2] 27E0F314BF897BD12C5B6DECA5F32C30 
+2024-10-06 22:56:43,878 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] get
+2024-10-06 22:56:43,879 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] 1
+2024-10-06 22:56:43,880 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-2] 27E0F314BF897BD12C5B6DECA5F32C30 
+2024-10-06 22:56:44,884 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] get
+2024-10-06 22:56:44,885 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] 1
+2024-10-06 22:56:44,886 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-2] 27E0F314BF897BD12C5B6DECA5F32C30 
+2024-10-06 22:56:45,892 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] get
+2024-10-06 22:56:45,893 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] 1
+2024-10-06 22:56:45,894 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-2] 27E0F314BF897BD12C5B6DECA5F32C30 
+2024-10-06 22:56:46,773 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-4] confirmKey
+2024-10-06 22:56:46,774 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-4] get
+2024-10-06 22:56:46,774 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-4] 1
+2024-10-06 22:56:46,774 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-4] update
+2024-10-06 22:56:46,775 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-4] update done
+2024-10-06 22:56:46,900 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] get
+2024-10-06 22:56:46,900 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-2] 1
+2024-10-06 22:56:46,901 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-2] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:56:49,907 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-5] requestWithUserId
+2024-10-06 22:56:49,907 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-5] waiting time: 60
+2024-10-06 22:56:49,908 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-5] get
+2024-10-06 22:56:49,908 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-5] 1
+2024-10-06 22:56:49,908 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-5] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:56:50,914 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-5] get
+2024-10-06 22:56:50,915 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-5] 1
+2024-10-06 22:56:50,915 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-5] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:56:51,918 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-5] get
+2024-10-06 22:56:51,919 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-5] 1
+2024-10-06 22:56:51,919 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-5] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:56:52,274 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-6] confirmUserId
+2024-10-06 22:56:52,274 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-6] get
+2024-10-06 22:56:52,274 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-6] 1
+2024-10-06 22:56:52,275 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-6] update
+2024-10-06 22:56:52,275 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-6] update done
+2024-10-06 22:56:52,921 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-5] get
+2024-10-06 22:56:52,922 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-5] 1
+2024-10-06 22:56:52,923 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-5] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:01,953 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-7] requestWithKey
+2024-10-06 22:57:01,954 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] insert
+2024-10-06 22:57:01,954 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-7] waiting time: 60
+2024-10-06 22:57:01,954 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] get
+2024-10-06 22:57:01,954 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] 1
+2024-10-06 22:57:01,954 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-7] 27E0F314BF897BD12C5B6DECA5F32C30 
+2024-10-06 22:57:02,960 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] get
+2024-10-06 22:57:02,961 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] 1
+2024-10-06 22:57:02,962 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-7] 27E0F314BF897BD12C5B6DECA5F32C30 
+2024-10-06 22:57:03,963 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] get
+2024-10-06 22:57:03,964 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] 1
+2024-10-06 22:57:03,964 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-7] 27E0F314BF897BD12C5B6DECA5F32C30 
+2024-10-06 22:57:04,965 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] get
+2024-10-06 22:57:04,966 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] 1
+2024-10-06 22:57:04,966 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-7] 27E0F314BF897BD12C5B6DECA5F32C30 
+2024-10-06 22:57:05,972 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] get
+2024-10-06 22:57:05,973 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] 1
+2024-10-06 22:57:05,974 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-7] 27E0F314BF897BD12C5B6DECA5F32C30 
+2024-10-06 22:57:06,718 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-8] confirmKey
+2024-10-06 22:57:06,718 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-8] get
+2024-10-06 22:57:06,719 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-8] 1
+2024-10-06 22:57:06,719 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-8] update
+2024-10-06 22:57:06,719 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-8] update done
+2024-10-06 22:57:06,977 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] get
+2024-10-06 22:57:06,978 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-7] 1
+2024-10-06 22:57:06,978 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-7] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:10,689 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] requestWithUserId
+2024-10-06 22:57:10,689 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] waiting time: 60
+2024-10-06 22:57:10,690 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:10,690 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:10,690 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:11,693 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:11,693 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:11,693 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:12,699 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:12,700 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:12,700 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:13,702 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:13,703 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:13,703 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:14,707 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:14,708 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:14,709 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:15,714 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:15,715 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:15,716 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:15,946 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-10] confirmUserId
+2024-10-06 22:57:15,947 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-10] get
+2024-10-06 22:57:15,947 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-10] 1
+2024-10-06 22:57:16,721 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:16,722 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:16,722 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:17,724 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:17,725 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:17,725 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:18,726 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:18,727 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:18,728 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:19,733 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:19,734 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:19,734 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:20,740 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:20,741 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:20,742 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:21,747 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:21,748 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:21,748 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:22,754 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:22,755 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:22,755 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:23,760 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:23,761 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:23,761 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:24,767 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:24,768 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:24,768 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:25,769 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:25,770 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:25,771 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:26,776 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:26,777 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:26,777 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:27,780 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:27,780 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:27,781 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:28,786 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:28,787 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:28,787 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:29,793 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:29,793 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:29,793 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:30,799 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:30,799 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:30,800 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:31,801 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:31,802 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:31,802 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:32,808 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] get
+2024-10-06 22:57:32,809 INFO n.o.o.s.QRCodeLoginService [http-nio-8081-exec-9] 1
+2024-10-06 22:57:32,809 INFO n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] 27E0F314BF897BD12C5B6DECA5F32C30 qadung
+2024-10-06 22:57:32,890 ERROR n.o.o.c.QRCodeLoginController [http-nio-8081-exec-9] java.lang.InterruptedException: sleep interrupted

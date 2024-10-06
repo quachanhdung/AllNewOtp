@@ -1,0 +1,67 @@
+<mxfile host="Electron" modified="2024-09-28T11:11:11.245Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="ycT6KtbbRmtwImp2LYde" version="24.0.4" type="device">
+  <diagram name="Page-1" id="0WxyVJalpS0WnLP0XDzm">
+    <mxGraphModel dx="954" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u-sjSB0GX09x1tlE4czm-17" value="App Server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="40" width="120" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="u-sjSB0GX09x1tlE4czm-18" value="App Server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="40" width="120" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="u-sjSB0GX09x1tlE4czm-19" value="qrCodeLogin" style="endArrow=classic;html=1;rounded=0;entryX=-0.033;entryY=0.124;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="213.95999999999998" y="78.75" as="sourcePoint" />
+            <mxPoint x="409.99999999999994" y="79.83000000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u-sjSB0GX09x1tlE4czm-20" value="sessionId" style="endArrow=classic;html=1;rounded=0;exitX=-0.033;exitY=0.359;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="409.99999999999994" y="109.77999999999997" as="sourcePoint" />
+            <mxPoint x="213.95999999999998" y="108.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u-sjSB0GX09x1tlE4czm-21" value="requestWithKey&lt;div&gt;key: sessionId&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;entryX=-0.033;entryY=0.124;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="214" y="148.75" as="sourcePoint" />
+            <mxPoint x="410" y="149.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u-sjSB0GX09x1tlE4czm-23" value="Chat API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="40" width="120" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="u-sjSB0GX09x1tlE4czm-24" value="confirmKey&lt;div&gt;insert userId&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="160" as="sourcePoint" />
+            <mxPoint x="530" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u-sjSB0GX09x1tlE4czm-25" value="key and userId" style="endArrow=classic;html=1;rounded=0;exitX=-0.033;exitY=0.359;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="409.99999999999994" y="189.77999999999997" as="sourcePoint" />
+            <mxPoint x="213.95999999999998" y="188.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u-sjSB0GX09x1tlE4czm-26" value="requestWithUserId&lt;div&gt;key: sessionId&lt;/div&gt;&lt;div&gt;userId: userId&lt;/div&gt;" style="endArrow=classic;html=1;rounded=0;entryX=-0.033;entryY=0.124;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="228.75" as="sourcePoint" />
+            <mxPoint x="406" y="229.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u-sjSB0GX09x1tlE4czm-27" value="confirmUserId" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="640" y="240" as="sourcePoint" />
+            <mxPoint x="530" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u-sjSB0GX09x1tlE4czm-28" value="key, userId, confirmed" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="268.75" as="sourcePoint" />
+            <mxPoint x="210" y="271.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -12,6 +12,7 @@ public class QRCodeLoginModel implements Serializable{
 
 	private String key;
 	private String userId;
+	private boolean confirmed;
 	private String info;
 
 	public QRCodeLoginModel() {
@@ -69,6 +70,16 @@ public class QRCodeLoginModel implements Serializable{
 
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+	
+	
+
+	public boolean isConfirmed() {
+		return confirmed;
+	}
+
+	public void setConfirmed(boolean confirmed) {
+		this.confirmed = confirmed;
 	}
 
 	public String getInfo() {

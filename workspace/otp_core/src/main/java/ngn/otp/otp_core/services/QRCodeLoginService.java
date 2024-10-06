@@ -21,8 +21,18 @@ public class QRCodeLoginService {
 	public  HashSet<QRCodeLoginModel> getListLog(){
 		return hashSet;
 	}
+	
+	public boolean insert(QRCodeLoginModel model) {
+		logger.info("insert with model");
+		if(model.getKey()==null || model.getKey().isEmpty() ) {
+			return false;
+		}
+		hashSet.add(model);
+		return true;
+		
+	}
 
-	public  void insert(String key, String userId) {
+	public void insert(String key, String userId) {
 		logger.info("insert");
 		if(key==null || key.isEmpty() || userId==null || userId.isEmpty()) {
 			return;
@@ -31,7 +41,7 @@ public class QRCodeLoginService {
 		hashSet.add(model);
 	}
 
-	public  boolean insert(String key) {
+	public boolean insert(String key) {
 		logger.info("insert");
 		if(key==null || key.isEmpty() ) {
 			return false;
