@@ -14,6 +14,8 @@ public class QRCodeLoginModel implements Serializable{
 	private String userId;
 	private boolean confirmed;
 	private String info;
+	private long requestTime;
+	private String location;
 
 	public QRCodeLoginModel() {
 
@@ -88,6 +90,28 @@ public class QRCodeLoginModel implements Serializable{
 
 	public void setInfo(String info) {
 		this.info = info;
+	}
+	
+	
+
+
+	public long getRequestTime() {
+		return requestTime;
+	}
+
+	public void setRequestTime(long requestTime) {
+		this.requestTime = requestTime;
+	}
+	
+	
+	
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
 	}
 
 	public static void main(String args[]) {

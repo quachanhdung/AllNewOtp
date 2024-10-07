@@ -5,17 +5,31 @@ import java.util.HashSet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+
+import jakarta.servlet.http.HttpServletRequest;
+import ngn.otp.otp_core.ApplicationContextProvider;
 import ngn.otp.otp_core.models.QRCodeLoginModel;
+import ngn.otp.otp_core.utils.PropUtil;
 
 @Service
 public class QRCodeLoginService {
 
 	private  Logger logger = LoggerFactory.getLogger(QRCodeLoginService.class);
+	
+	private PropUtil prop = ApplicationContextProvider.getContext().getBean(PropUtil.class);
 	private  HashSet<QRCodeLoginModel> hashSet = new HashSet<>();
+	private String ipinfoApiKey="";
 	
 	public  QRCodeLoginService() {
 		logger.info("QRCodeLoginService start ...");
+		ipinfoApiKey = prop.get("ipinfo.apiKey");
+		if(ipinfoApiKey==null) {
+			ipinfoApiKey="aecc9905f896b6";
+		}
 	}
 
 	public  HashSet<QRCodeLoginModel> getListLog(){
@@ -88,6 +102,35 @@ public class QRCodeLoginService {
 		
 		logger.info("update done");
 		return model;
+	}
+
+	public String getLocation(HttpServletRequest request) {
+		logger.info("=====getLocation=====");
+		
+		try {
+			Gson gson = new Gson();
+			String ipAddress = request.getHeader("X-Forwarded-For");
+	        if (ipAddress == null || ipAddress.isEmpty()) {
+	            ipAddress = request.getRemoteAddr();
+	        }
+	        
+	        String apiUrl =  "https://ipinfo.io/" + ipAddress + "/json?token=" + ipinfoApiKey;
+	        logger.info(apiUrl);
+	        RestTemplate restTemplate = new RestTemplate();
+	        String result = restTemplate.getForObject(apiUrl, String.class);
+	        logger.info(result.toString());
+	        
+	        JsonObject jsonObject = gson.fromJson(result, JsonObject.class);
+	        String location = jsonObject.get("city").getAsString()+" ";
+	        location+= jsonObject.get("region").getAsString()+" ";
+	        location+= jsonObject.get("country").getAsString();
+
+	        return location;
+		}catch(Exception e) {
+			logger.error(e.toString());
+			return "";
+		}
+
 	}
 
 

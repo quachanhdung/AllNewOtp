@@ -1,5 +1,6 @@
 package ngn.otp.otp_core.controllers;
 
+import java.util.Date;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
@@ -58,7 +60,7 @@ public class QRCodeLoginController {
         
 
         // Get the session ID
-        String sessionId = session.getId();
+        String sessionId = session.getId()+"NGN";
         
 		return CommonUtil.createResult(200, "Ok", sessionId);
 		
@@ -70,6 +72,7 @@ public class QRCodeLoginController {
 		logger.info("requestWithKey");
 		String key="";
 		String info="";
+		String location="";
 		try {
 			key= requestBody.get("key").toString();
 			
@@ -83,9 +86,20 @@ public class QRCodeLoginController {
 			info = request.getHeader("User-Agent");
 		}
 		
+		try {
+			location= requestBody.get("location").toString();
+		}catch(Exception e) {
+			location = this.qrService.getLocation(request);
+		}
+		
+		
+		
+		
 		QRCodeLoginModel model = new QRCodeLoginModel();
 		model.setKey(key);
 		model.setInfo(info);
+		model.setRequestTime(new Date().getTime());
+		model.setLocation(location);
 		
 //		if(this.qrService.insert(key)==false) {
 //			return CommonUtil.createResult(400, "key is required or duplicate", null);
@@ -105,6 +119,8 @@ public class QRCodeLoginController {
 		return CommonUtil.createResult(200, "Ok", model);
 	}
 	
+	
+
 	@PostMapping("/confirmKey")
 	Map<String, Object> confirmKey(@RequestBody Map<String, Object> requestBody){
 		logger.info("confirmKey");
@@ -179,6 +195,10 @@ public class QRCodeLoginController {
 		QRCodeLoginModel model = this.qrService.get(key);
 		if(model==null) {
 			return CommonUtil.createResult(400, "no key found", key);
+		}
+		
+		if(model.isConfirmed()==true) {
+			return CommonUtil.createResult(400, "none awaiting confirmation", key);
 		}
 		
 		if(model.getUserId()==null || model.getUserId().trim().isEmpty()) {
